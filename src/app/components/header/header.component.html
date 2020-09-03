@@ -1,5 +1,4 @@
-<div class="flex justify-center items-center">
-    <button routerLink="/home" class="text-white font-default">Home</button>
-    <button routerLink="/contact" class="text-white font-default">Customers</button>
-    <button routerLink="/testimonials" class="text-white font-default">Orders</button>
+<div class="animated-header relative overflow-hidden">
+    <h1 class="font-primary pointer-events-none font-bold"><ng-content select="[title]"></ng-content></h1>
+    <h3 class="font-secondary absolute pl-12 left-auto"><ng-content select="[subtitle]"></ng-content></h3>
 </div>
