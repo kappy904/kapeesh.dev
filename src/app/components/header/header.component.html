@@ -1,4 +1,4 @@
 <div class="animated-header relative overflow-hidden">
-    <h1 class="font-primary pointer-events-none font-bold"><ng-content select="[title]"></ng-content></h1>
-    <h3 class="font-secondary absolute pl-12 left-auto"><ng-content select="[subtitle]"></ng-content></h3>
+    <h1 [ngStyle]="{'color': titleColor}" class="font-primary pointer-events-none font-bold"><ng-content select="[title]"></ng-content></h1>
+    <h3 [ngStyle]="{'color': subtitleColor}" class="font-secondary absolute pl-12 left-auto"><ng-content select="[subtitle]"></ng-content></h3>
 </div>

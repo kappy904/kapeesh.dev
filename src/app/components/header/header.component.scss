@@ -1,29 +1,23 @@
 .animated-header {
     max-height: 400px;
-    width: 100vw;
 
     h1 {
         animation: blur 35s infinite alternate-reverse ease-in-out;
         font-size: 20em;
         letter-spacing: -25px;
         font-weight: 800;
-        color: #0b95601c;
+        color: #fff;
     }
 
     h3 {
         bottom: 0;
         font-size: 4em;
-        color: #0b9560;
-        background: linear-gradient(to right, #7970bd 20%, #edffe5);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: rgba(0,0,0,.2);
 
         &::after {
             content: '';
             width: 10px;
             height: 10px;
-            background-color: #7d74be;
+            background-color: #fff;
             position: absolute;
             top: 30px;
             border-radius: 50%;
