@@ -7,11 +7,16 @@
         letter-spacing: -25px;
         font-weight: 800;
         color: #fff;
+
+		@media screen and (max-width: 640px){
+			font-size: 6em;
+			letter-spacing: -5px;
+			animation: none;
+		}
     }
 
     h3 {
         bottom: 0;
-        font-size: 4em;
 
         &::after {
             content: '';
@@ -21,6 +26,9 @@
             position: absolute;
             top: 30px;
             border-radius: 50%;
+			@media screen and (max-width: 640px){
+				display: none;
+			}
         }
     }
 }

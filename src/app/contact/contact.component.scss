@@ -1,0 +1,27 @@
+.move-up {
+	a {
+		opacity: 0;
+		animation: animation-move-up 3s ease-out;
+		animation-fill-mode: forwards;
+		top: -20px;
+		@for $i from 1 to 10 {
+			&:nth-child(#{$i}) {
+				animation-delay: $i * 0.2s;
+			}
+		}
+	}
+}
+
+
+@keyframes animation-move-up {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		top: 0;
+		transform: translateY(0);
+	}
+}
+

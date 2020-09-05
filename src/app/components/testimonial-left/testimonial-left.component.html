@@ -1,0 +1,15 @@
+<div class="flex  mb-3 items-center flex-col md:flex-row">
+	<picture class="flex-shrink-0 relative block w-1/4 relative sm:mt-2 md:mr-20 md:w-1/6">
+		<ng-content select="[testimonial-image]"></ng-content>
+	</picture>
+	<div>
+		<h2 class="font-secondary text-2xl"><strong>
+			<ng-content select="[testimonial-name]"></ng-content>
+		</strong> |
+			<ng-content select="[testimonial-title]"></ng-content>
+		</h2>
+		<p class="font-primary"><i class="icon-bullhorn"></i>&nbsp;<ng-content
+			select="[testimonial-blurb]"></ng-content>
+		</p>
+	</div>
+</div>
