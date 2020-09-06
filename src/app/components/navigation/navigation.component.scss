@@ -1,0 +1,48 @@
+.nav {
+	width: 300px;
+	height: 300px;
+	background: linear-gradient(#7d74be, #01935e);
+	z-index: 9;
+	animation: animate-rotate infinite 15s;
+
+	@media screen and (max-width: 768px){
+		width: 120px;
+		height: 120px;
+		z-index: 9;
+		animation: none;
+		top: -60px;
+	}
+}
+
+.nav-items {
+	width: 100vh;
+	height: 100vh;
+	background-color: #000;
+	border-radius: 0 0 50% 50%;
+	box-shadow: 20px -3px #1e8f6b;
+}
+
+.nav-active {
+	background-position: 0 100%;
+	font-weight: 800;
+}
+
+.animate-rotate {
+	transform: rotate(360deg);
+}
+
+@keyframes animate-rotate {
+	0%{
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.full-screen {
+	overflow: hidden;
+	height: 100vh;
+	z-index: 8;
+}

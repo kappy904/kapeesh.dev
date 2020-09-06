@@ -1,5 +1,18 @@
-<div class="flex justify-around items-center flex">
-    <button routerLink="/home" class="font-default">Home</button>
-    <button routerLink="/contact" class="font-default">Contact</button>
-    <button routerLink="/testimonials" class="font-default">Testimonials</button>
+<div class="flex justify-around items-center flex overflow-hidden" [ngClass]="{'full-screen': isActive}">
+	<nav class="nav block absolute rounded-full cursor-pointer" (click)="showNav()"
+		 [ngClass]="{'animate-rotate': isActive}"></nav>
+	<div class="nav-items flex flex-col" *ngIf="isActive">
+		<a routerLinkActive="nav-active" routerLink="/home" class="text-4xl font-primary text-center uppercase"
+		   (click)="showNav()">Home</a>
+		<a routerLinkActive="nav-active" routerLink="/cv" class="text-4xl font-primary text-center uppercase"
+		   (click)="showNav()">CV</a>
+		<a routerLinkActive="nav-active" routerLink="/portfolio" class="text-4xl font-primary text-center uppercase"
+		   (click)="showNav()">Portfolio</a>
+		<a routerLinkActive="nav-active" routerLink="/contact" class="text-4xl font-primary text-center uppercase"
+		   (click)="showNav()">Contact</a>
+		<a routerLinkActive="nav-active" routerLink="/testimonials"
+		   class="text-4xl font-primary text-center uppercase" (click)="showNav()">Testimonials</a>
+		<a routerLinkActive="nav-active" routerLink="/about" class="text-4xl font-primary text-center uppercase"
+		   (click)="showNav()">About</a>
+	</div>
 </div>
