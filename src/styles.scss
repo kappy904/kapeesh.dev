@@ -105,7 +105,7 @@ a {
 	background-size: 200% 100%;
 	background-position: 100%;
 	transition: background-position 275ms ease;
-	text-decoration: underline; // text decorations are clipped in WebKit browsers
+	text-decoration: none; // text decorations are clipped in WebKit browsers
 	&:hover {
 		background-position: 0 100%;
 	}
