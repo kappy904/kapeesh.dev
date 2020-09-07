@@ -20,6 +20,14 @@
 	background-color: #000;
 	border-radius: 0 0 50% 50%;
 	box-shadow: 20px -3px #1e8f6b;
+	position: relative;
+	z-index: 2;
+
+	@media screen and (max-width: 768px){
+		border-radius: 0;
+		box-shadow: none;
+		background: #000000d9;
+	}
 }
 
 .nav-active {
@@ -45,4 +53,32 @@
 	overflow: hidden;
 	height: 100vh;
 	z-index: 8;
+}
+
+.circles-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	overflow: hidden;
+	display: none;
+
+	&.active {
+		opacity: 0;
+		animation: fade-in 2s linear;
+		animation-fill-mode: forwards;
+		display :block;
+	}
+}
+
+
+@keyframes fade-in{
+	0% {
+		opacity: 0;
+
+	}
+	100% {
+		opacity: 1;
+	}
 }

@@ -1,15 +1,15 @@
 <div class="flex flex-col-reverse md:flex-row mb-3 md:justify-end items-center">
 	<div>
-		<h2 class="font-secondary text-2xl md:text-right"><strong>
+		<h2 class="font-secondary leading-7 md:text-2xl text-lg mb-3"><strong>
 			<ng-content select="[testimonial-name]"></ng-content>
 		</strong> |
 			<ng-content select="[testimonial-title]"></ng-content>
 		</h2>
-		<p class="font-primary md:text-right"><i class="icon-bullhorn"></i>&nbsp;<ng-content
+		<p class="font-primary leading-5 text-xs md:text-base md:leading-6 md:text-right"><i class="icon-bullhorn"></i>&nbsp;<ng-content
 			select="[testimonial-blurb]"></ng-content>
 		</p>
 	</div>
-	<picture class="flex-shrink-0 w-1/4 relative block sm:mt-2 md:w-1/6 md:ml-20">
+	<picture class="flex-shrink-0 w-1/4 relative block my-3 sm:mt-2 md:w-1/6 md:ml-20">
 		<ng-content select="[testimonial-image]"></ng-content>
 	</picture>
 </div>

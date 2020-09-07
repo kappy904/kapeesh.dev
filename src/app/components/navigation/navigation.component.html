@@ -1,7 +1,8 @@
 <div class="flex justify-around items-center flex overflow-hidden" [ngClass]="{'full-screen': isActive}">
+	<div id="circlesContainer" class="circles-container" [ngClass]="{'active': isActive}"></div>
 	<nav class="nav block absolute rounded-full cursor-pointer" (click)="showNav()"
 		 [ngClass]="{'animate-rotate': isActive}"></nav>
-	<div class="nav-items flex flex-col" *ngIf="isActive">
+	<div class="nav-items flex flex-col justify-center md:justify-start" *ngIf="isActive">
 		<a routerLinkActive="nav-active" routerLink="/home" class="text-4xl font-primary text-center uppercase"
 		   (click)="showNav()">Home</a>
 		<a routerLinkActive="nav-active" routerLink="/cv" class="text-4xl font-primary text-center uppercase"
