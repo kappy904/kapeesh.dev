@@ -1,14 +1,11 @@
-<div class="flex  mb-3 items-center flex-col md:flex-row">
+<div class="flex mb-40 items-center flex-col md:flex-row">
 	<picture class="flex-shrink-0 relative block w-1/4 relative my-3 md:mr-20 md:w-1/6">
 		<ng-content select="[testimonial-image]"></ng-content>
 	</picture>
 	<div>
-		<h2 class="font-secondary leading-7 md:text-2xl text-lg mb-3"><strong>
-			<ng-content select="[testimonial-name]"></ng-content>
-		</strong> |
-			<ng-content select="[testimonial-title]"></ng-content>
-		</h2>
-		<p class="font-primary"><p class="font-primary leading-5 text-xs md:text-base md:leading-6"><i class="icon-bullhorn"></i>&nbsp;<ng-content
+		<h2 class="font-secondary tracking-tighter leading-5 md:text-3xl text-lg mb-2 font-bold"><ng-content select="[testimonial-name]"></ng-content></h2>
+		<h3 class="font-bold font-primary mb-4"><ng-content select="[testimonial-title]"></ng-content></h3>
+		<p class="font-light font-primary leading-5 leading-7 text-xl tracking-wider"><i class="icon-bullhorn"></i>&nbsp;<ng-content
 		select="[testimonial-blurb]"></ng-content></p>
 	</div>
 </div>
