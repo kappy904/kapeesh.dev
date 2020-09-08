@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 	titleColor = 'rgb(125 116 190 / 11%)'
+	pageTitleColor = 'rgb(21, 0, 158)'
 	subtitleColor = '#7d74be'
 
   constructor() { }

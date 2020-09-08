@@ -8,6 +8,7 @@ import { Component } from '@angular/core'
 export class TestimonialsComponent {
 	titleColor = 'rgba(11, 149, 96, 0.11)'
 	subtitleColor = '#01935e'
+	pageTitleColor: 'rgb(21, 0, 158)';
 
 	constructor() {
 	}

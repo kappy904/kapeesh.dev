@@ -1,4 +1,14 @@
 <div class="animated-header relative overflow-hidden">
-    <h1 [ngStyle]="{'color': titleColor}" class="font-primary pointer-events-none font-bold"><ng-content select="[title]"></ng-content></h1>
-    <h3 [ngStyle]="{'color': subtitleColor}" class="font-secondary absolute pl-3 text-3xl md:pl-12 left-auto tracking-widest sm:text-4xl md:text-6xl"><ng-content select="[subtitle]"></ng-content></h3>
+	<h1 [ngStyle]="{'color': titleColor}" class="font-primary pointer-events-none font-bold">
+		<ng-content select="[title]"></ng-content>
+	</h1>
+	<div class="absolute bottom-0">
+		<h4 [ngStyle]="{'color': pageTitleColor}" class="font-primary font-bold font-primary pl-12 pointer-events-none text-2xl">
+			<ng-content select="[page-title]"></ng-content>
+		</h4>
+		<h3 [ngStyle]="{'color': subtitleColor}"
+			class="font-secondary pl-3 text-3xl md:pl-12 left-auto tracking-widest sm:text-4xl md:text-6xl relative">
+			<ng-content select="[subtitle]"></ng-content>
+		</h3>
+	</div>
 </div>

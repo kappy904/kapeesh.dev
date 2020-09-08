@@ -8,6 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class PortfolioComponent implements OnInit {
 	titleColor = 'rgb(125 116 190 / 11%)'
 	subtitleColor = '#7d74be'
+	pageTitleColor: 'rgb(21, 0, 158)';
 
 	constructor() {
 	}

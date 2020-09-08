@@ -7,18 +7,36 @@
 		letter-spacing: -25px;
 		font-weight: 800;
 		color: #fff;
+		line-height: 280px;
 
 		@media screen and (max-width: 640px) {
 			font-size: 6em;
 			letter-spacing: -5px;
 			animation: sm-blur 35s infinite alternate-reverse ease-in-out;
+			line-height: 180px;
+		}
+	}
+
+	h4 {
+		opacity: 0;
+		animation: fade-in 4s ease;
+		animation-fill-mode: forwards;
+		color: #14029c;
+		@media screen and (max-width: 640px) {
+			animation: none;
+			opacity: 1;
 		}
 	}
 
 	h3 {
-		bottom: 0;
+		bottom: 10px;
+		opacity: 0;
 		animation: letter-spacing 4s ease;
 		animation-fill-mode: forwards;
+		@media screen and (max-width: 640px) {
+			animation: none;
+			opacity: 1;
+		}
 
 		&::after {
 			content: '';
@@ -66,11 +84,20 @@
 @keyframes letter-spacing {
 	0% {
 		opacity: 0;
-		letter-spacing: 0;
+		letter-spacing: .1em;
 	}
 	100% {
 		opacity: 1;
-		letter-spacing: .1em;
+		letter-spacing: -2px;
 	}
 }
 
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+
+	}
+	100% {
+		opacity: 1;
+	}
+}
