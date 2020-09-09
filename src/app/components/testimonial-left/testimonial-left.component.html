@@ -4,8 +4,10 @@
 	</picture>
 	<div>
 		<h2 class="font-secondary tracking-tighter leading-5 md:text-3xl text-lg mb-2 font-bold"><ng-content select="[testimonial-name]"></ng-content></h2>
-		<h3 class="font-bold font-primary mb-4"><ng-content select="[testimonial-title]"></ng-content></h3>
-		<p class="font-light font-primary leading-5 leading-7 text-xl tracking-wider"><i class="icon-bullhorn"></i>&nbsp;<ng-content
-		select="[testimonial-blurb]"></ng-content></p>
+		<h3 class="font-bold font-primary mb-6"><ng-content select="[testimonial-title]"></ng-content></h3>
+		<p class="font-light font-primary leading-5 leading-7 text-xl tracking-wider"><ng-content select="[testimonial-blurb]"></ng-content></p>
+		<div class="flex flex-row mt-6">
+			<ng-content select="[testimonial-links]"></ng-content>
+		</div>
 	</div>
 </div>

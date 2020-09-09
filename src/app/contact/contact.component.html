@@ -1,22 +1,41 @@
-
-<app-header [titleColor]="titleColor" [pageTitleColor]="pageTitleColor" [subtitleColor]="subtitleColor">
+<app-header [titleColor]="titleColor" [subtitleColor]="subtitleColor">
 	<ng-container title>ContactContactContact</ng-container>
 	<ng-container page-title>Contact me</ng-container>
 	<ng-container subtitle>Learning Through Contacting</ng-container>
 </app-header>
 
-
-<div class="container content-center flex flex-col justify-center m-auto">
-
-	<div class="content-center flex flex-row justify-center mb-2">
-		<a href="mailto:kapeeshmanilal@gmail.com"><i class="icon-mail4 text-6xl"></i></a>
+<div class="flex container content-center flex flex-col md:flex-row justify-evenly m-auto">
+	<div class="flex text-center pl-3 md:pl-0">
+		<a href="mailto:kapeeshmanilal@gmail.com"><i class="icon-mail4 text-6xl" style="font-size: 18em;"></i></a>
 	</div>
-	<div class="content-center flex flex-row justify-evenly move-up">
-		<a href="https://github.com/kappy904" target="_blank" class="text-4xl icon-github"></a>
-		<a href="https://www.linkedin.com/in/kapeesh-manilal-53323913/" target="_blank" class="text-4xl icon-linkedin"></a>
-		<a href="https://www.instagram.com/kapeeshkappykap/" class="text-4xl icon-instagram"></a>
-		<a href="https://stackoverflow.com/users/5846771/kapeesh-manilal" target="_blank" class="text-4xl icon-stackoverflow"></a>
-		<a href="https://steamcommunity.com/profiles/76561198041254623/" target="_blank" class="text-4xl icon-steam2"></a>
-		<a href="https://codepen.io/KapeeshKappyKap" target="_blank" class="text-4xl icon-terminal"></a>
+	<div class="flex flex-col pl-3 md:pl-0 md:flex-row">
+		<div class="flex flex-col md:mr-24">
+			<div class="flex flex-row items-center mb-10">
+				<a href="https://github.com/kappy904"><i class="icon-github mr-6 text-3xl md:text-6xl"></i></a>
+				<p class="font-bold font-primary text-xl tracking-widest">Github</p>
+			</div>
+			<div class="flex flex-row items-center mb-10">
+				<a href="https://www.linkedin.com/in/kapeesh-manilal-53323913/"><i class="icon-linkedin mr-6 text-3xl md:text-6xl"></i></a>
+				<p class="font-bold font-primary text-xl tracking-widest">LinkedIn</p>
+			</div>
+			<div class="flex flex-row items-center mb-10">
+				<a href="https://www.instagram.com/kapeeshkappykap/"><i class="icon-instagram mr-6 text-3xl md:text-6xl"></i></a>
+				<p class="font-bold font-primary text-xl tracking-widest">Instagram</p>
+			</div>
+		</div>
+		<div class="flex flex-col">
+			<div class="flex flex-row items-center mb-10">
+				<a href="https://stackoverflow.com/users/5846771/kapeesh-manilal"><i class="icon-stackoverflow mr-6 text-3xl md:text-6xl"></i></a>
+				<p class="font-bold font-primary text-xl tracking-widest">Stack Overflow</p>
+			</div>
+			<div class="flex flex-row items-center mb-10">
+				<a href="https://steamcommunity.com/profiles/76561198041254623/"><i class="icon-steam2 mr-6 text-3xl md:text-6xl"></i></a>
+				<p class="font-bold font-primary text-xl tracking-widest">Steam</p>
+			</div>
+			<div class="flex flex-row items-center mb-10">
+				<a href="https://codepen.io/KapeeshKappyKap"><i class="icon-terminal mr-6 text-3xl md:text-6xl"></i></a>
+				<p class="font-bold font-primary text-xl tracking-widest">CodePen</p>
+			</div>
+		</div>
 	</div>
 </div>

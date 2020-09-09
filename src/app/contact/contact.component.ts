@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core'
 export class ContactComponent implements OnInit {
     titleColor = 'rgb(125 116 190 / 11%)'
     subtitleColor = '#7d74be'
-    pageTitleColor: 'rgb(20 12 26 / 100%)'
+
 
     constructor() {
     }

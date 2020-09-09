@@ -106,6 +106,7 @@ a {
 	background-position: 100%;
 	transition: background-position 275ms ease;
 	text-decoration: none; // text decorations are clipped in WebKit browsers
+	cursor: pointer;
 	&:hover {
 		background-position: 0 100%;
 	}
