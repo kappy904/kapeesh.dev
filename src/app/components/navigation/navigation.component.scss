@@ -5,7 +5,7 @@
 	z-index: 9;
 	animation: animate-rotate infinite 15s;
 
-	@media screen and (max-width: 768px){
+	@media screen and (max-width: 768px) {
 		width: 120px;
 		height: 120px;
 		z-index: 9;
@@ -22,8 +22,11 @@
 	box-shadow: 20px -3px #1e8f6b;
 	position: relative;
 	z-index: 2;
+	opacity: 0;
+	animation: fade-in 1s ease-out;
+	animation-fill-mode: forwards;
 
-	@media screen and (max-width: 768px){
+	@media screen and (max-width: 768px) {
 		border-radius: 0;
 		box-shadow: none;
 		background: #000000d9;
@@ -40,7 +43,7 @@
 }
 
 @keyframes animate-rotate {
-	0%{
+	0% {
 		transform: rotate(360deg);
 	}
 
@@ -68,12 +71,12 @@
 		opacity: 0;
 		animation: fade-in 2s linear;
 		animation-fill-mode: forwards;
-		display :block;
+		display: block;
 	}
 }
 
 
-@keyframes fade-in{
+@keyframes fade-in {
 	0% {
 		opacity: 0;
 

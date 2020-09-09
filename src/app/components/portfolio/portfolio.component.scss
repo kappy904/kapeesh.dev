@@ -1,0 +1,19 @@
+.circle {
+	&-large {
+		width: 423px;
+		height: 423px;
+
+		@media screen and (max-width: 640px) {
+			width: 223px;
+			height: 223px;
+		}
+	}
+
+	&-small {
+		width: 123px;
+		height: 123px;
+
+		@media screen and (max-width: 640px) {
+		}
+	}
+}

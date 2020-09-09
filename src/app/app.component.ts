@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import {Component, OnInit} from '@angular/core'
 import * as p5 from 'p5'
 
 @Component({
@@ -7,7 +7,6 @@ import * as p5 from 'p5'
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-	title = 'kapeesh-dev'
 	private p5: any
 
 	ngOnInit(): void {
@@ -31,7 +30,7 @@ export class AppComponent implements OnInit {
 				NumCircles = 10,
 				protection = 100,
 				counter = 0,
-				canvasWidth = window.innerWidth,
+				canvasWidth = window.innerWidth - 20,
 				canvasHeight = window.innerHeight
 
 

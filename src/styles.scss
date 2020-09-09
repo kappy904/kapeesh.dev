@@ -114,3 +114,8 @@ a {
 strong {
 	font-weight: 800;
 }
+
+.container {
+	position: relative;
+	z-index: 1;
+}
