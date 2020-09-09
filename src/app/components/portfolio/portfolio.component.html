@@ -1,0 +1,25 @@
+<div class="flex container mx-auto flex-col justify-center items-center mb-32" [ngClass]="isLeft ? 'md:flex-row ' : 'md:flex-row-reverse'">
+	<div class="flex-auto mx-8">
+		<i class="bg-purple rounded-full block" style="width: 423px;height:423px;"></i>
+		<ng-container *ngIf="hasAwards">
+			<i class="bg-purple rounded-full block" style="width: 123px;height:123px;"></i>
+		</ng-container>
+	</div>
+	<div class="px-3">
+		<h3 class="font-bold font-primary mb-2 text-blue tracking-wider"><ng-content select="[portfolio-year]"></ng-content></h3>
+		<h2 class="font-secondary tracking-tighter leading-5 md:text-3xl text-lg mb-4 font-bold text-blue leading-8"><ng-content select="[portfolio-title]"></ng-content></h2>
+		<p class="font-light font-primary leading-5 leading-7 text-xl tracking-wider mb-6"><ng-content select="[portfolio-description]"></ng-content></p>
+		<p class="font-bold font-primary mb-2 text-blue">My top learnings</p>
+		<ul class="font-light font-primary leading-5 leading-7 text-xl tracking-wider list-disc pl-5 mb-6">
+			<ng-content select="[portfolio-learnings]"></ng-content>
+		</ul>
+		<ng-container *ngIf="hasAwards">
+			<p class="font-bold font-primary mb-2 text-blue">Awards</p>
+			<ul class="font-light font-primary leading-5 leading-7 text-xl tracking-wider list-disc pl-5 mb-6">
+				<ng-content select="[portfolio-awards]"></ng-content>
+			</ul>
+		</ng-container>
+
+		<a class="font-bold font-primary mb-2 text-blue" href="mailto:kapeeshmanilal@gmail.com">Ask me about this project</a>
+	</div>
+</div>

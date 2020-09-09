@@ -4,7 +4,8 @@ import {HeaderComponent} from './header/header.component'
 import {RouterModule} from '@angular/router'
 import { NavigationComponent } from './navigation/navigation.component';
 import { TestimonialRightComponent } from './testimonial-right/testimonial-right.component';
-import { TestimonialLeftComponent } from './testimonial-left/testimonial-left.component'
+import { TestimonialLeftComponent } from './testimonial-left/testimonial-left.component';
+import { PortfolioComponent } from './portfolio/portfolio.component'
 
 
 
@@ -13,14 +14,16 @@ import { TestimonialLeftComponent } from './testimonial-left/testimonial-left.co
         HeaderComponent,
         NavigationComponent,
         TestimonialRightComponent,
-        TestimonialLeftComponent
+        TestimonialLeftComponent,
+        PortfolioComponent
     ],
-	exports: [
-		HeaderComponent,
-		NavigationComponent,
-		TestimonialLeftComponent,
-		TestimonialRightComponent
-	],
+    exports: [
+        HeaderComponent,
+        NavigationComponent,
+        TestimonialLeftComponent,
+        TestimonialRightComponent,
+        PortfolioComponent
+    ],
     imports: [
         CommonModule,
         RouterModule

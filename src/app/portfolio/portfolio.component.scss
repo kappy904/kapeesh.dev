@@ -1,0 +1,87 @@
+.circle {
+	@apply w-16 h-16 bg-purple rounded-full p-2 relative;
+
+	&-small {
+		@apply w-32 h-32 bg-purple rounded-full p-4 relative;
+	}
+
+	&-large {
+		@apply w-64 h-64 bg-purple rounded-full p-6 relative;
+	}
+}
+
+.circle-wrapper {
+	div {
+		&:nth-child(1) {
+			left: 110px;
+			top: 40px;
+		}
+
+		&:nth-child(2) {
+			top: 200px;
+		}
+
+		&:nth-child(3) {
+
+		}
+
+		&:nth-child(4) {
+			top: 100px;
+			left: 20px;
+		}
+
+		&:nth-child(5) {
+			top: 20px;
+			left: -30px;
+		}
+
+		&:nth-child(6) {
+			top: 90px;
+			left: -20px;
+		}
+
+		&:nth-child(7) {
+			top: 50px;
+			right: 13px;
+		}
+
+		&:nth-child(8) {
+			top: -20px;
+		}
+
+		&:nth-child(9) {
+		}
+
+		&:nth-child(10) {
+			top: 200px;
+			left: -100px;
+		}
+
+		&:nth-child(11) {
+			left: -22px;
+			top: 20px;
+		}
+
+		&:nth-child(12) {
+		}
+
+		&:nth-child(13) {
+		}
+
+		&:nth-child(14) {
+			top: 65px;
+			right: 20px;
+		}
+
+		&:nth-child(15) {
+			top: -50px;
+		}
+
+		&:nth-child(16) {
+
+		}
+
+		&:nth-child(17) {
+		}
+	}
+}
