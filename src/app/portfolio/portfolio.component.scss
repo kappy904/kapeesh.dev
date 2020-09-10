@@ -1,12 +1,12 @@
 .circle {
-	@apply w-16 h-16 bg-purple rounded-full p-2 relative;
+	@apply w-16 h-16 bg-purple rounded-full p-2 relative bg-cover;
 
 	&-small {
-		@apply w-32 h-32 bg-purple rounded-full p-4 relative;
+		@apply w-32 h-32 bg-purple rounded-full p-4 relative bg-cover;
 	}
 
 	&-large {
-		@apply w-64 h-64 bg-purple rounded-full p-6 relative;
+		@apply w-64 h-64 bg-purple rounded-full p-6 relative bg-cover;
 	}
 }
 
