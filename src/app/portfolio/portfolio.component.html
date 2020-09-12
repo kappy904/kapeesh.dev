@@ -68,8 +68,12 @@
 
 <app-portfolio-block [isLeft]="true" [hasAwards]="true">
 	<ng-container portfolio-image>
-		<i class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto"
-		   style="background-image:url('./assets/images/portfolio/portfolio-3.jpg');"></i>
+		<i class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto relative overflow-hidden cursor-pointer">
+			<button  *ngIf="isVisible" class="play-button rounded-full bg-purple absolute" aria-label="Play" role="button" (click)="toggleVideo()">►</button>
+			<video #videoPlayer width="100%" height="100%" class="absolute video-player object-cover" loop poster="./assets/images/portfolio/portfolio-3.jpg">
+				<source src="./assets/images/portfolio/portfolio-savanna-video.mp4" type="video/mp4">
+			</video>
+		</i>
 	</ng-container>
 	<ng-container portfolio-award-image><i class="bg-purple rounded-full circle-small block bg-cover bg-center"
 										   style="background-image:url('./assets/images/portfolio/portfolio-2-award-3.jpg');"></i>
