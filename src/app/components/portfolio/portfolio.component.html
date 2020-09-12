@@ -1,10 +1,8 @@
 <div class="flex container mx-auto flex-col justify-center items-center mb-20 md:mb-32"
 	 [ngClass]="isLeft ? 'md:flex-row ' : 'md:flex-row-reverse'">
 	<div class="flex-auto mx-8">
-		<i class="bg-purple rounded-full block circle-large"></i>
-		<ng-container *ngIf="hasAwards">
-			<i class="bg-purple rounded-full circle-small block"></i>
-		</ng-container>
+		<ng-content select="[portfolio-image]"></ng-content>
+		<ng-content select="[portfolio-award-image]"></ng-content>
 	</div>
 	<div class="px-3">
 		<h3 class="font-bold font-primary mb-2 text-blue tracking-wider">

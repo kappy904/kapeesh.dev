@@ -1,4 +1,25 @@
 .circle {
+	&-large {
+		width: 423px;
+		height: 423px;
+
+		@media screen and (max-width: 640px) {
+			width: 223px;
+			height: 223px;
+		}
+	}
+
+	&-small {
+		width: 123px;
+		height: 123px;
+
+		@media screen and (max-width: 640px) {
+		}
+	}
+}
+
+
+.client {
 	@apply w-16 h-16 bg-purple rounded-full p-2 relative bg-cover;
 
 	&-small {
@@ -10,7 +31,7 @@
 	}
 }
 
-.circle-wrapper {
+.client-wrapper {
 	div {
 		&:nth-child(1) {
 			left: 110px;
