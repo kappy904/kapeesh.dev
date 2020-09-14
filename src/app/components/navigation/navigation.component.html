@@ -1,19 +1,21 @@
-<div class="flex justify-around items-center flex overflow-hidden" [ngClass]="{'full-screen': isActive}">
-	<div id="circlesContainer" class="circles-container" [ngClass]="{'active': isActive}"></div>
-	<nav class="nav block absolute rounded-full cursor-pointer" (click)="showNav()"
-		 [ngClass]="{'animate-rotate': isActive}"></nav>
-	<div class="nav-items flex flex-col justify-center md:justify-start" *ngIf="isActive">
-		<a routerLinkActive="nav-active" routerLink="/home" class="text-4xl font-primary text-center uppercase"
+<nav class="nav block absolute rounded-full cursor-pointer" (click)="showNav()"></nav>
+<div class="flex justify-around items-center flex overflow-hidden hidden-wrapper fixed" [ngClass]="{'full-screen block': isActive}">
+	<div id="circlesContainer" class="circles-container overflow-hidden" [ngClass]="{'active': isActive}"></div>
+	<div class="nav-items flex flex-col justify-center md:justify-start">
+		<h5 class="font-secondary font-bold text-center mt-20">Front End Developer</h5>
+		<h2 class="font-secondary font-bold text-6xl text-center mb-24 leading-10"><strong>Kapeesh</strong></h2>
+
+		<a routerLinkActive="nav-active" routerLink="/home" class="text-3xl text-center mb-4"
 		   (click)="showNav()">Home</a>
-		<a routerLinkActive="nav-active" routerLink="/cv" class="text-4xl font-primary text-center uppercase"
-		   (click)="showNav()">CV</a>
-		<a routerLinkActive="nav-active" routerLink="/portfolio" class="text-4xl font-primary text-center uppercase"
+		<a routerLinkActive="nav-active" routerLink="/portfolio" class="text-3xl text-center mb-4"
 		   (click)="showNav()">Portfolio</a>
-		<a routerLinkActive="nav-active" routerLink="/contact" class="text-4xl font-primary text-center uppercase"
-		   (click)="showNav()">Contact</a>
 		<a routerLinkActive="nav-active" routerLink="/testimonials"
-		   class="text-4xl font-primary text-center uppercase" (click)="showNav()">Testimonials</a>
-		<a routerLinkActive="nav-active" routerLink="/about" class="text-4xl font-primary text-center uppercase"
+		   class="text-3xl text-center mb-4" (click)="showNav()">Testimonials</a>
+		<a routerLinkActive="nav-active" routerLink="/about" class="text-3xl text-center mb-4"
 		   (click)="showNav()">About</a>
+		<a routerLinkActive="nav-active" routerLink="/cv" class="text-3xl text-center mb-4"
+		   (click)="showNav()">CV</a>
+		<a routerLinkActive="nav-active" routerLink="/contact" class="text-3xl text-center mb-4"
+		   (click)="showNav()">Contact</a>
 	</div>
 </div>

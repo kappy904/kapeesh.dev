@@ -1,9 +1,17 @@
+.hidden-wrapper {
+	display: none;
+	&.block {
+		display: block;
+	}
+}
 .nav {
-	width: 300px;
-	height: 300px;
+	width: 50px;
+	height: 50px;
 	background: linear-gradient(#7d74be, #01935e);
 	z-index: 9;
-	animation: animate-rotate infinite 15s;
+	right: 30px;
+	top: 30px;
+	position: fixed;
 
 	@media screen and (max-width: 768px) {
 		width: 120px;
@@ -15,28 +23,37 @@
 }
 
 .nav-items {
-	width: 100vh;
+	width: 100vw;
 	height: 100vh;
-	background-color: #000;
-	border-radius: 0 0 50% 50%;
-	box-shadow: 20px -3px #1e8f6b;
 	position: relative;
 	z-index: 2;
 	opacity: 0;
+	color: #FCFFD1;
 	animation: fade-in 1s ease-out;
 	animation-fill-mode: forwards;
 
-	@media screen and (max-width: 768px) {
-		border-radius: 0;
-		box-shadow: none;
-		background: #000000d9;
+	a {
+		color: #FCFFD1!important;
+		background: none;
+		transition: opacity 200ms linear;
+		-webkit-background-clip: initial;
+		-webkit-text-fill-color: #FCFFD1;
+		background-size: auto;
+		background-position: 100%;
+		&:hover {
+			opacity: .7;
+		}
+
+		&.nav-active {
+			background-position: 0 100%;
+			font-weight: 800;
+			text-decoration: underline;
+			font-family: 'Merriweather Sans', sans-serif;
+		}
 	}
 }
 
-.nav-active {
-	background-position: 0 100%;
-	font-weight: 800;
-}
+
 
 .animate-rotate {
 	transform: rotate(360deg);
@@ -56,6 +73,9 @@
 	overflow: hidden;
 	height: 100vh;
 	z-index: 8;
+	&.fixed {
+		position: fixed !important;
+	}
 }
 
 .circles-container {
@@ -64,8 +84,9 @@
 	left: 0;
 	z-index: 1;
 	width: 100%;
-	overflow: hidden;
 	display: none;
+	background-color: #15009e;
+	filter: blur(10px);
 
 	&.active {
 		opacity: 0;

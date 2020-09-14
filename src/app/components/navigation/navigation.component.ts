@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, ViewChild } from '@angular/core'
 import * as p5 from 'p5'
 
 @Component({
@@ -9,6 +9,7 @@ import * as p5 from 'p5'
 export class NavigationComponent implements OnInit {
 	isActive: boolean
 	private p5: any
+	@ViewChild('body') body: string
 
 	constructor() {
 	}
@@ -19,6 +20,7 @@ export class NavigationComponent implements OnInit {
 
 	showNav(): void {
 		this.isActive = !this.isActive
+		this.body
 	}
 
 	private createCanvas() {
@@ -35,8 +37,8 @@ export class NavigationComponent implements OnInit {
 					r: undefined
 				},
 				overlapping = false,
-				NumCircles = 10,
-				protection = 100,
+				NumCircles = 5,
+				protection = 10,
 				counter = 0,
 				canvasWidth = window.innerWidth,
 				canvasHeight = window.innerHeight
@@ -49,7 +51,7 @@ export class NavigationComponent implements OnInit {
 				circle = {
 					x: p.random(p.width),
 					y: p.random(p.height),
-					r: p.random(3, 100)
+					r: p.random(50, 200)
 				}
 				overlapping = false
 
@@ -74,7 +76,7 @@ export class NavigationComponent implements OnInit {
 				counter++
 			}
 
-			p.fill('#0a916569')
+			p.fill('#471af3')
 			p.noStroke()
 			for (let i = 0; i < circles.length; i++) {
 				p.ellipse(circles[i].x + p.random(-1, 1), circles[i].y + p.random(-1, 1),
