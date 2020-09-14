@@ -20,7 +20,6 @@ export class NavigationComponent implements OnInit {
 
 	showNav(): void {
 		this.isActive = !this.isActive
-		this.body
 	}
 
 	private createCanvas() {

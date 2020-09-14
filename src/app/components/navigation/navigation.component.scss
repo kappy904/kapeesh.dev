@@ -1,24 +1,83 @@
 .hidden-wrapper {
 	display: none;
+
 	&.block {
 		display: block;
 	}
 }
+
+.text-white {
+	color: #fff;
+}
+
+.logo {
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+
+	i {
+		font-style: normal;
+		width: 46px;
+		height: 46px;
+		font-size: 53px;
+		text-align: center;
+		line-height: 50px;
+	}
+}
+
 .nav {
-	width: 50px;
-	height: 50px;
-	background: linear-gradient(#7d74be, #01935e);
+	width: 70px;
+	height: 70px;
+	background: #15009E;
 	z-index: 9;
 	right: 30px;
 	top: 30px;
 	position: fixed;
+	overflow: hidden;
+
+	.line {
+		width: 60%;
+		margin: 0 auto;
+		height: 4px;
+		position: relative;
+		background: #fff;
+		transition: 1s all ease-out;
+
+		&:nth-child(1) {
+			top: 20px;
+		}
+
+		&:nth-child(2) {
+			top: 30px;
+		}
+
+		&:nth-child(3) {
+			top: 40px;
+		}
+	}
+
+	&.active {
+		.line {
+			&:nth-child(1) {
+				transform: rotate(45deg);
+				top: 35px;
+			}
+
+			&:nth-child(2) {
+				display: none;
+			}
+
+			&:nth-child(3) {
+				transform: rotate(-45deg);
+				top: 31px;
+			}
+		}
+	}
 
 	@media screen and (max-width: 768px) {
-		width: 120px;
-		height: 120px;
-		z-index: 9;
-		animation: none;
-		top: -60px;
+		transform: scale(0.65);
+		top: 3px;
+		right: 10px;
 	}
 }
 
@@ -33,13 +92,14 @@
 	animation-fill-mode: forwards;
 
 	a {
-		color: #FCFFD1!important;
+		color: #FCFFD1 !important;
 		background: none;
 		transition: opacity 200ms linear;
 		-webkit-background-clip: initial;
 		-webkit-text-fill-color: #FCFFD1;
 		background-size: auto;
 		background-position: 100%;
+
 		&:hover {
 			opacity: .7;
 		}
@@ -53,26 +113,15 @@
 	}
 }
 
-
-
 .animate-rotate {
 	transform: rotate(360deg);
-}
-
-@keyframes animate-rotate {
-	0% {
-		transform: rotate(360deg);
-	}
-
-	100% {
-		transform: rotate(0deg);
-	}
 }
 
 .full-screen {
 	overflow: hidden;
 	height: 100vh;
 	z-index: 8;
+
 	&.fixed {
 		position: fixed !important;
 	}
@@ -96,6 +145,15 @@
 	}
 }
 
+@keyframes animate-rotate {
+	0% {
+		transform: rotate(360deg);
+	}
+
+	100% {
+		transform: rotate(0deg);
+	}
+}
 
 @keyframes fade-in {
 	0% {
