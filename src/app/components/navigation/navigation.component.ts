@@ -19,7 +19,10 @@ export class NavigationComponent implements OnInit {
 	}
 
 	showNav(): void {
+
 		this.isActive = !this.isActive
+		setTimeout(() => {window.scroll(0,0)}, 1)
+
 	}
 
 	private createCanvas() {
