@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _title: Title, private _meta: Meta) { }
 
   ngOnInit(): void {
+	  this._title.setTitle('Home | Kapeesh.dev')
+	  this._meta.updateTag({name: "description", content: "Welcome to my portfolio site"})
   }
 
 }

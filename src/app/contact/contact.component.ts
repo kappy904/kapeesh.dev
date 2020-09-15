@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core'
+import { Meta, Title } from '@angular/platform-browser'
 
 @Component({
     selector: 'app-contact',
@@ -10,10 +11,12 @@ export class ContactComponent implements OnInit {
     subtitleColor = '#7d74be'
 
 
-    constructor() {
+    constructor(private _title: Title, private _meta: Meta) {
     }
 
     ngOnInit(): void {
+		this._title.setTitle('Contact | Kapeesh.dev')
+		this._meta.updateTag({name: "description", content: "Let's connect"})
     }
 
 }

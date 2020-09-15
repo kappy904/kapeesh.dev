@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-about',
@@ -10,9 +11,11 @@ export class AboutComponent implements OnInit {
 	pageTitleColor = 'rgb(21, 0, 158)'
 	subtitleColor = '#7d74be'
 
-  constructor() { }
+  constructor(private _title: Title,private _meta: Meta) { }
 
   ngOnInit(): void {
+	  this._title.setTitle('About | Kapeesh.dev')
+	  this._meta.updateTag({name: "description", content: "Get to know me"})
   }
 
 }
