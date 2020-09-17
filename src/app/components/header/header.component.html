@@ -3,13 +3,13 @@
 		<ng-content select="[title]"></ng-content>
 	</h1>
 	<div class="absolute bottom-0">
-		<h4 [ngStyle]="{'color': pageTitleColor}"
+		<h3 [ngStyle]="{'color': pageTitleColor}"
 			class="font-primary font-bold font-primary pl-3 md:pl-12 pointer-events-none select-none text-base mb-1 md:mb-0 md:text-2xl">
 			<ng-content select="[page-title]"></ng-content>
-		</h4>
-		<h3 [ngStyle]="{'color': subtitleColor}"
+		</h3>
+		<h4 [ngStyle]="{'color': subtitleColor}"
 			class="font-secondary pl-3 text-3xl md:pl-12 left-auto pointer-events-none select-none leading-8 md:leading-none md:tracking-widest sm:text-4xl md:text-6xl font-extrabold relative">
 			<ng-content select="[subtitle]"></ng-content>
-		</h3>
+		</h4>
 	</div>
 </div>
