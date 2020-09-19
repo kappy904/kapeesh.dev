@@ -3,8 +3,7 @@ import * as p5 from 'p5'
 
 @Component({
 	selector: 'app-root',
-	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss']
+	templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
 	private p5: any

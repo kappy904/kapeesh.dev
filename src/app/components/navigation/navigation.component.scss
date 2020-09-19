@@ -83,7 +83,8 @@
 
 .nav-items {
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
+	overflow-y: auto;
 	position: relative;
 	z-index: 2;
 	opacity: 0;
