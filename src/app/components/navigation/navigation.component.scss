@@ -95,7 +95,9 @@
 	color: #FCFFD1;
 	animation: fade-in 1s ease-out;
 	animation-fill-mode: forwards;
-	background: linear-gradient(#15009E, #940094);
+	@media screen and (max-width: 768px) {
+		background: linear-gradient(#15009E, #940094);
+	}
 
 	a {
 		color: #FCFFD1 !important;
