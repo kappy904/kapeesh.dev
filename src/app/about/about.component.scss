@@ -4,9 +4,7 @@
 	}
 
 	picture {
-		display: inline-flex;
-
-
+		display: block;
 		&:nth-child(1) {
 			img {
 				right: -240px;
@@ -57,7 +55,7 @@
 		}
 
 		picture {
-			display: inline-flex;
+			display: block;
 
 			&:nth-child(1) {
 				img {
