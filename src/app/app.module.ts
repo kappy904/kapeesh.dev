@@ -5,6 +5,7 @@ import {AppRoutingModule} from './app-routing.module'
 import {AppComponent} from './app.component'
 import {ScullyLibModule} from '@scullyio/ng-lib'
 import {ComponentsModule} from './components/components.module';
+import {MobileService} from './services/mobile.service';
 
 @NgModule({
 	declarations: [
@@ -16,7 +17,7 @@ import {ComponentsModule} from './components/components.module';
 		ScullyLibModule,
 		ComponentsModule
 	],
-	providers: [],
+	providers: [MobileService],
 	bootstrap: [AppComponent]
 })
 export class AppModule {

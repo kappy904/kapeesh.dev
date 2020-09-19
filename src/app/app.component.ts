@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core'
 import * as p5 from 'p5'
+import {MobileService} from "./services/mobile.service";
 
 @Component({
 	selector: 'app-root',
@@ -8,8 +9,11 @@ import * as p5 from 'p5'
 export class AppComponent implements OnInit {
 	private p5: any
 
+	constructor(private _mobileService: MobileService) {
+	}
+
 	ngOnInit(): void {
-		this.createCanvas()
+		!this._mobileService.isMobileResolution() ? this.createCanvas() : ''
 	}
 
 	private createCanvas() {

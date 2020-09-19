@@ -1,5 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core'
+import {Component, OnInit, ViewChild} from '@angular/core'
 import * as p5 from 'p5'
+import {MobileService} from "../../services/mobile.service";
 
 @Component({
 	selector: 'app-navigation',
@@ -11,11 +12,11 @@ export class NavigationComponent implements OnInit {
 	private p5: any
 	@ViewChild('body') body: string
 
-	constructor() {
+	constructor(private _mobileService: MobileService) {
 	}
 
 	ngOnInit(): void {
-		this.createCanvas()
+		!this._mobileService.isMobileResolution() ? this.createCanvas() : ''
 	}
 
 	showNav(): void {
