@@ -3,8 +3,8 @@
 
 	h1 {
 		animation: blur 35s infinite alternate-reverse ease-in-out;
-		font-size: 20em;
-		letter-spacing: -25px;
+		font-size: 17em;
+		letter-spacing: -22px;
 		color: #fff;
 		line-height: 280px;
 
@@ -30,7 +30,7 @@
 	h4 {
 		bottom: 10px;
 		opacity: 0;
-		animation: letter-spacing 4s ease;
+		animation: letter-spacing 1s cubic-bezier(0.55, 0.06, 0.68, 0.19);;
 		animation-fill-mode: forwards;
 		@media screen and (max-width: 640px) {
 			animation: none;
