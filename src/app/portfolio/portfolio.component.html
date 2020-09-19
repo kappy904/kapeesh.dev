@@ -24,7 +24,7 @@
 	</ng-container>
 </app-portfolio-block>
 
-<app-portfolio-block [isLeft]="false" [hasAwards]="true">
+<app-portfolio-block [hasAwards]="true">
 	<ng-container portfolio-image>
 		<i class="bg-purple rounded-full block circle-large bg-cover mx-auto"
 		   style="background-image:url('./assets/images/portfolio/portfolio-2.png');"></i>
@@ -45,8 +45,9 @@
 	<ng-container portfolio-title>Hungry Lion big burger banner</ng-container>
 	<ng-container portfolio-description>South Africa's first HTML5 mobile activated banner advert. A campaign to
 		generate leads (location and mobile numbers) for our client. And thus the start of my web animation love-story.
-		<a href="https://www.youtube.com/watch?v=0OwyCWtBzPg" target="_blank" rel="noopener" title="YouTube Video">Watch the case study
-		video</a>
+		<a href="https://www.youtube.com/watch?v=0OwyCWtBzPg" target="_blank" rel="noopener" title="YouTube Video">Watch
+			the case study
+			video</a>
 	</ng-container>
 	<ng-container portfolio-learnings>
 		<li>Pure CSS3 animation</li>
@@ -69,14 +70,18 @@
 <app-portfolio-block [isLeft]="true" [hasAwards]="true">
 	<ng-container portfolio-image>
 		<i class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto relative overflow-hidden cursor-pointer">
-			<button  *ngIf="isVisible" class="play-button rounded-full bg-purple absolute" aria-label="Play" role="button" (click)="toggleVideo()">►</button>
-			<video #videoPlayer width="100%" height="100%" class="absolute video-player object-cover" loop poster="./assets/images/portfolio/portfolio-3.jpg">
+			<button *ngIf="isVisible" class="play-button rounded-full bg-purple absolute" aria-label="Play"
+					role="button" (click)="toggleVideo()">►
+			</button>
+			<video #videoPlayer width="100%" height="100%" class="absolute video-player object-cover" loop
+				   poster="./assets/images/portfolio/portfolio-3.jpg">
 				<source src="./assets/images/portfolio/portfolio-savanna-video.mp4" type="video/mp4">
 			</video>
 		</i>
 	</ng-container>
-	<ng-container portfolio-award-image><i class="bg-purple rounded-full circle-small block bg-cover bg-center hidden md:block"
-										   style="background-image:url('./assets/images/portfolio/portfolio-2-award-3.jpg');"></i>
+	<ng-container portfolio-award-image><i
+		class="bg-purple rounded-full circle-small block bg-cover bg-center hidden md:block"
+		style="background-image:url('./assets/images/portfolio/portfolio-2-award-3.jpg');"></i>
 	</ng-container>
 	<ng-container portfolio-year>Highlights</ng-container>
 	<ng-container portfolio-title>Savanna Cider HTML + GSAP.js animation library bottle reveal</ng-container>
@@ -93,10 +98,11 @@
 	</ng-container>
 </app-portfolio-block>
 
-<app-portfolio-block [isLeft]="false" [hasAwards]="false">
+<app-portfolio-block>
 	<ng-container portfolio-image>
-		<a href="https://www.icealion.com/" target="_blank" rel="noopener"><i class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto"
-															   style="background-image:url('./assets/images/portfolio/porfolio-4.png');"></i></a>
+		<a href="https://www.icealion.com/" target="_blank" rel="noopener"><i
+			class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto"
+			style="background-image:url('./assets/images/portfolio/porfolio-4.png');"></i></a>
 	</ng-container>
 	<ng-container portfolio-year>Highlights</ng-container>
 	<ng-container portfolio-title>ICEA LION</ng-container>
@@ -111,7 +117,8 @@
 	</ng-container>
 	<ng-container portfolio-awards>
 		<li>Standard Bank <a target="_blank" rel="noopener"
-			href="https://www.bizcommunity.com/Article/196/614/133024.html">MMA Smarties Award</a> (GOLD)
+							 href="https://www.bizcommunity.com/Article/196/614/133024.html">MMA Smarties Award</a>
+			(GOLD)
 		</li>
 		<li>The Assegai Awards (Integrated Direct Marketing Campaigns) (SILVER)</li>
 		<li>The Loerie Awards Company (Digital & Interactive - Internet Advertising)
@@ -121,6 +128,29 @@
 	</ng-container>
 </app-portfolio-block>
 
+<app-portfolio-block [isLeft]="true">
+	<ng-container portfolio-image>
+		<i class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto relative overflow-hidden cursor-pointer">
+			<button *ngIf="isVisibleB" class="play-button rounded-full bg-purple absolute" aria-label="Play"
+					role="button" (click)="toggleVideoB()">►
+			</button>
+			<video #videoPlayerB width="100%" height="100%" class="absolute video-player object-cover" loop
+				   poster="./assets/images/portfolio/portfolio-5.jpg">
+				<source src="./assets/images/portfolio/portfolio-three-ships.mp4" type="video/mp4">
+			</video>
+		</i>
+	</ng-container>
+	<ng-container portfolio-year>Highlights</ng-container>
+	<ng-container portfolio-title>Three Ships Whiskey - Art Of Whiskey Making SVG animated experience</ng-container>
+	<ng-container portfolio-description>A scroll-activated animated interaction of the whiskey crafting process.
+		Using the power of SVG line animations and CSS3 for a simple yet effective process illustration.
+	</ng-container>
+	<ng-container portfolio-learnings>
+		<li>SVG</li>
+		<li>SVG animation powered by CSS3</li>
+		<li>Scroll intersection javascript activated animations</li>
+	</ng-container>
+</app-portfolio-block>
 <app-header [titleColor]="titleColor" [pageTitleColor]="pageTitleColor" [subtitleColor]="subtitleColor">
 	<ng-container title>ClientsClientsClientsClients</ng-container>
 	<ng-container subtitle>Clients</ng-container>

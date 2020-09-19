@@ -2,13 +2,13 @@
 require('dotenv').config();
 const enablePurge = process.env.ENABLE_PURGE || false;*/
 module.exports = {
-/*	purge: {
-		enabled: enablePurge,
+	purge: {
+		enabled: true,
 		content: [
-			'./src/!**!/!*.html',
-			'./src/!**!/!*.scss'
+			'./src/**/*.html',
+			'./src/!**/!*.scss'
 		]
-	},*/
+	},
 	theme: {
 		extend: {
 			colors: {

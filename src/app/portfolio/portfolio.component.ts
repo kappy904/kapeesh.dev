@@ -11,7 +11,9 @@ export class PortfolioComponent implements OnInit{
 	subtitleColor = '#7d74be'
 	pageTitleColor: 'rgb(21, 0, 158)'
 	isVisible: boolean = true
+	isVisibleB: boolean = true
 	@ViewChild('videoPlayer') videoplayer: ElementRef
+	@ViewChild('videoPlayerB') videoplayerB: ElementRef
 
 	constructor(private _title: Title, private _meta: Meta) {}
 
@@ -23,5 +25,10 @@ export class PortfolioComponent implements OnInit{
 	toggleVideo() {
 		this.isVisible = !this.isVisible
 		this.videoplayer.nativeElement.play()
+	}
+
+	toggleVideoB() {
+		this.isVisibleB = !this.isVisibleB
+		this.videoplayerB.nativeElement.play()
 	}
 }
