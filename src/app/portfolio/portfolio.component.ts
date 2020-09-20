@@ -14,6 +14,8 @@ export class PortfolioComponent implements OnInit{
 	isVisibleB: boolean = true
 	@ViewChild('videoPlayer') videoplayer: ElementRef
 	@ViewChild('videoPlayerB') videoplayerB: ElementRef
+	showImages: boolean = false;
+	showPortfolioItems: boolean= false;
 
 	constructor(private _title: Title, private _meta: Meta) {}
 

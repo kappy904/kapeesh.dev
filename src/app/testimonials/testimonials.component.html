@@ -106,57 +106,66 @@
 	<ng-container subtitle>Mentees</ng-container>
 </app-header>
 
-<div class="container mx-auto px-4 h-screen py-10">
-	<app-testimonial-left>
-		<ng-container testimonial-image>
-			<source type="image/avif" srcset="./assets/images/testimonials/testimonials-sagwadi.avif">
-			<img class="rounded-full" alt="Sagwadi Maluleke"
-				 src="./assets/images/testimonials/testimonials-sagwadi.jpg">
-		</ng-container>
-		<ng-container testimonial-name><a href="https://www.linkedin.com/in/masagwadi/">Sagwadi Maluleke</a>
-		</ng-container>
-		<ng-container testimonial-title>Fullstack Developer @ Red and Yellow Creative School of business</ng-container>
-		<ng-container testimonial-blurb>My mentorship experience with Kapeesh beyond
-			empowering. The mentorship was very structured and practical, Kapeesh shared resources as well as
-			exercises which helped me learn more skills and test myself, we had a regular meeting to review and give
-			feedback.
+<div (deferLoad)="showMentees = true" class="container mx-auto px-4 h-screen py-10">
+	<ng-container *ngIf="showMentees">
+		<app-testimonial-left>
+			<ng-container testimonial-image>
+				<source type="image/avif" srcset="./assets/images/testimonials/testimonials-sagwadi.avif">
+				<img class="rounded-full" alt="Sagwadi Maluleke"
+					 src="./assets/images/testimonials/testimonials-sagwadi.jpg">
+			</ng-container>
+			<ng-container testimonial-name><a href="https://www.linkedin.com/in/masagwadi/">Sagwadi Maluleke</a>
+			</ng-container>
+			<ng-container testimonial-title>Fullstack Developer @ Red and Yellow Creative School of business
+			</ng-container>
+			<ng-container testimonial-blurb>My mentorship experience with Kapeesh beyond
+				empowering. The mentorship was very structured and practical, Kapeesh shared resources as well as
+				exercises which helped me learn more skills and test myself, we had a regular meeting to review and give
+				feedback.
 
-			This has played a critical role in my career development, the skills and knowledge became very helpful
-			in my current position as a developer. Kapeesh is one of the best developer, and he is very eager to
-			share his knowledge, tricks, and resources. I am grateful for his role in shaping the developer I am
-			today.
-		</ng-container>
-		<ng-container testimonial-links>
-			<a class="font-bold font-primary pr-8">Check out Sagwadi's LinkedIn</a>
+				This has played a critical role in my career development, the skills and knowledge became very helpful
+				in my current position as a developer. Kapeesh is one of the best developer, and he is very eager to
+				share his knowledge, tricks, and resources. I am grateful for his role in shaping the developer I am
+				today.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8">Check out Sagwadi's LinkedIn</a>
 
-		</ng-container>
-	</app-testimonial-left>
+			</ng-container>
+		</app-testimonial-left>
 
-	<app-testimonial-right>
+		<app-testimonial-right>
 
-		<ng-container testimonial-name><a
-			href="https://www.linkedin.com/in/mandisa-d-3233889b/">Mandisa
-			Dlubom</a></ng-container>
-		<ng-container testimonial-title>Front-end developer @ Responsive Digital</ng-container>
-		<ng-container testimonial-blurb>I was fortunate to be mentored towards being a front-end developer by Kapeesh
-			Manilal from January 2018 until early 2019. Before the mentorship, I was
-			fresh out of a Web Development 6 months course and I felt like I didn't know what I was doing.
+			<ng-container testimonial-name><a
+				href="https://www.linkedin.com/in/mandisa-d-3233889b/">Mandisa
+				Dlubom</a></ng-container>
+			<ng-container testimonial-title>Front-end developer @ Responsive Digital</ng-container>
+			<ng-container testimonial-blurb>I was fortunate to be mentored towards being a front-end developer by
+				Kapeesh
+				Manilal from January 2018 until early 2019. Before the mentorship, I was
+				fresh out of a Web Development 6 months course and I felt like I didn't know what I was doing.
 
-			Kappy was introduced as my mentor, what amazed me was that he created a curriculum which also had timelines
-			and I had mini-projects that I had to deliver within the due date and present it. My curriculum was a year
-			plan, with Kappy as my mentor, I was production-ready within 6 months and I started working on client work.
+				Kappy was introduced as my mentor, what amazed me was that he created a curriculum which also had
+				timelines
+				and I had mini-projects that I had to deliver within the due date and present it. My curriculum was a
+				year
+				plan, with Kappy as my mentor, I was production-ready within 6 months and I started working on client
+				work.
 
-			I am grateful that Kappy took me under his wing and ensured that he passed his knowledge and set my career
-			up for a win. I used to call him the best mentor ever and I still believe he is one.
-		</ng-container>
-		<ng-container testimonial-links>
-			<a class="font-bold font-primary pr-8">Check out Mandie's LinkedIn</a>
+				I am grateful that Kappy took me under his wing and ensured that he passed his knowledge and set my
+				career
+				up for a win. I used to call him the best mentor ever and I still believe he is one.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8">Check out Mandie's LinkedIn</a>
 
-		</ng-container>
-		<ng-container testimonial-image>
-			<source type="image/avif" srcset="./assets/images/testimonials/testimonials-mandisa.avif">
-			<img class="rounded-full" alt="Mandisa Dlubom" src="./assets/images/testimonials/testimonials-mandisa.jpg">
-		</ng-container>
-	</app-testimonial-right>
+			</ng-container>
+			<ng-container testimonial-image>
+				<source type="image/avif" srcset="./assets/images/testimonials/testimonials-mandisa.avif">
+				<img class="rounded-full" alt="Mandisa Dlubom"
+					 src="./assets/images/testimonials/testimonials-mandisa.jpg">
+			</ng-container>
+		</app-testimonial-right>
+	</ng-container>
 </div>
 
