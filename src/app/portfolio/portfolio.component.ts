@@ -8,7 +8,7 @@ import { Meta, Title } from '@angular/platform-browser'
 })
 export class PortfolioComponent implements OnInit{
 	titleColor = 'rgb(125 116 190 / 11%)'
-	subtitleColor = '#7d74be'
+	subtitleColor = '#5a1f9f'
 	pageTitleColor: 'rgb(21, 0, 158)'
 	isVisible: boolean = true
 	isVisibleB: boolean = true

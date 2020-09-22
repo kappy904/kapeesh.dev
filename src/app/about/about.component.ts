@@ -9,7 +9,7 @@ import { Meta, Title } from '@angular/platform-browser'
 export class AboutComponent implements OnInit {
 	titleColor = 'rgb(125 116 190 / 11%)'
 	pageTitleColor = 'rgb(21, 0, 158)'
-	subtitleColor = '#7d74be'
+	subtitleColor = '#5a1f9f'
 
   constructor(private _title: Title,private _meta: Meta) { }
 
