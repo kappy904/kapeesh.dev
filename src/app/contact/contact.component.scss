@@ -6,6 +6,19 @@
 	top: -20px;
 }
 
+.gradient {
+	background: linear-gradient(130deg, #940094 30%, #15009E);
+	width: 300px;
+	height: 300px;
+}
+
+.force-white {
+	-webkit-background-clip: revert;
+	background-clip: revert;
+	-webkit-text-fill-color: white;
+	text-fill-color: white;
+}
+
 @keyframes animation-move-up {
 	0% {
 		opacity: 0;

@@ -1,6 +1,90 @@
 .circle {
+	border: 5px solid #15009E;
+
+
+	&:hover {
+		svg {
+			path {
+				fill: #FCFFD1;
+			}
+		}
+
+		h2 {
+			transition: .2s linear all;
+			color: #FCFFD1;
+		}
+
+		h5 {
+			transition: .2s linear all;
+			color: #940094;
+		}
+
+		&:hover {
+			transition: .2s linear all;
+			border: none;
+			background: linear-gradient(70deg, #15009E 35%, #15009E 20%, #940094);
+		}
+
+		&::before {
+			display: none;
+		}
+	}
+
 	&-a {
+		border: none;
 		background: linear-gradient(130deg, #940094 10%, #15009E 50%, #15009E);
+		width: 431px;
+		height: 431px;
+		transition: .2s linear all;
+
+		&:hover {
+			transition: .2s linear all;
+			border: 5px solid #15009E !important;
+			background: transparent !important;
+
+			svg {
+				path {
+					fill: url(#portfolio-a);
+				}
+			}
+
+			h2 {
+				transition: .2s linear all;
+				color: #15009E;
+			}
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 501px;
+			height: 501px;
+			left: -36px;
+			top: -37px;
+			background-size: cover;
+			background-image: url('../../assets/images/home/home-circle-a.png');
+			animation: rotateIn 1s linear;
+			animation-fill-mode: forwards;
+			pointer-events: none;
+		}
+	}
+
+	&-b {
+		width: 320px;
+		height: 320px;
+	}
+
+	&-c {
+		width: 220px;
+		height: 220px;
+	}
+
+	&-d {
+		width: 420px;
+		height: 420px;
+	}
+
+	&-e {
 		width: 420px;
 		height: 420px;
 	}
@@ -8,4 +92,15 @@
 
 .text-6xl {
 	font-size: 5rem;
+}
+
+@keyframes rotateIn {
+	0% {
+		opacity: 0;
+		transform: rotate(95deg);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(195deg);
+	}
 }
