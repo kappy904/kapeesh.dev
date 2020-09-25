@@ -1,8 +1,14 @@
 .circle {
-	border: 5px solid #15009E;
-
+	border: 3px solid #15009E;
+	margin: 0;
+	padding: 0;
+	outline: 0;
 
 	&:hover {
+		border: 3px solid #940094;
+		transition: .2s linear all;
+		background: linear-gradient(70deg, #15009E 35%, #15009E 20%, #940094);
+
 		svg {
 			path {
 				fill: #FCFFD1;
@@ -19,15 +25,6 @@
 			color: #940094;
 		}
 
-		&:hover {
-			transition: .2s linear all;
-			border: none;
-			background: linear-gradient(70deg, #15009E 35%, #15009E 20%, #940094);
-		}
-
-		&::before {
-			display: none;
-		}
 	}
 
 	&-a {
@@ -36,6 +33,7 @@
 		width: 431px;
 		height: 431px;
 		transition: .2s linear all;
+		top: 80px;
 
 		&:hover {
 			transition: .2s linear all;
@@ -52,9 +50,14 @@
 				transition: .2s linear all;
 				color: #15009E;
 			}
+
+			&::before {
+				opacity: 0 !important;
+			}
 		}
 
 		&::before {
+
 			content: "";
 			position: absolute;
 			width: 501px;
@@ -72,21 +75,129 @@
 	&-b {
 		width: 320px;
 		height: 320px;
+		top: 60px;
+		left: -120px;
+
+		&:hover {
+			&::before {
+				opacity: 1;
+				transform: scale(1);
+				transition: ease-in 100ms;
+			}
+		}
+
+		&::before {
+			opacity: 0;
+			content: "";
+			position: absolute;
+			width: 390px;
+			height: 388px;
+			left: -42px;
+			top: -37px;
+			transform: scale(.9);
+			background-size: cover;
+			background-image: url('../../assets/images/home/home-circle-b.png');
+			pointer-events: none;
+		}
+
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 150px;
+			background: #15009E;
+			height: 3px;
+			left: auto;
+			right: -115px;
+			bottom: 30px;
+			transform: rotate(35deg);
+			transform-origin: center center;
+		}
 	}
 
 	&-c {
-		width: 220px;
-		height: 220px;
+		width: 250px;
+		height: 250px;
+		top: 100px;
+		left: -70px;
+
+		&:hover {
+			&::before {
+				opacity: 1;
+				transform: scale(1) rotate(-13deg);
+				transition: ease-in 100ms;
+			}
+		}
+
+		&::before {
+			opacity: 0;
+			content: "";
+			position: absolute;
+			width: 310px;
+			height: 310px;
+			left: -42px;
+			top: -33px;
+			transform: scale(.9) rotate(-13deg);
+			background-size: cover;
+			background-image: url('../../assets/images/home/home-circle-c.png');
+			pointer-events: none;
+		}
 	}
 
 	&-d {
-		width: 420px;
-		height: 420px;
+		width: 360px;
+		height: 360px;
+		top: 20px;
+		left: 80px;
+		&:hover {
+			&::before {
+				opacity: 1;
+				transform: scale(1);
+				transition: ease-in 100ms;
+			}
+		}
+
+		&::before {
+			opacity: 0;
+			content: "";
+			position: absolute;
+			width: 430px;
+			height: 430px;
+			left: -42px;
+			top: -44px;
+			transform: scale(.9);
+			background-size: cover;
+			background-image: url('../../assets/images/home/home-circle-d.png');
+			pointer-events: none;
+		}
 	}
 
 	&-e {
-		width: 420px;
-		height: 420px;
+		width: 260px;
+		height: 260px;
+		top: -46px;
+		right: -73px;
+		&:hover {
+			&::before {
+				opacity: 1;
+				transform: scale(1);
+				transition: ease-in 100ms;
+			}
+		}
+
+		&::before {
+			opacity: 0;
+			content: "";
+			position: absolute;
+			width: 300px;
+			height: 290px;
+			left: -19px;
+			top: -18px;
+			transform: scale(.9);
+			background-size: cover;
+			background-image: url('../../assets/images/home/home-circle-e.png');
+			pointer-events: none;
+		}
 	}
 }
 
