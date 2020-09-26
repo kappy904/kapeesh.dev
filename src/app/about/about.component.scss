@@ -5,6 +5,7 @@
 
 	picture {
 		display: block;
+
 		&:nth-child(1) {
 			img {
 				right: -240px;
@@ -14,7 +15,7 @@
 
 				@media screen and (max-width: 640px) {
 					top: 80px;
-					right: -170px;
+					right: -150px;
 				}
 			}
 
@@ -39,7 +40,7 @@
 				height: 289px;
 
 				@media screen and (max-width: 640px) {
-					right: -80px;
+					right: -70px;
 					top: -75px;
 				}
 			}
@@ -73,6 +74,8 @@
 
 					@media screen and (max-width: 640px) {
 						left: 50px;
+						width: 273px;
+						height: 263px;
 					}
 				}
 			}
@@ -102,4 +105,10 @@
 
 .rounded-full {
 	border-radius: 50%;
+}
+
+iframe {
+	@media screen and (max-width: 768px) {
+		width: 100% !important;
+	}
 }
