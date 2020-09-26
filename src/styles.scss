@@ -1,16 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;800&family=Petrona:wght@700;900&display=swap');
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
 body {
-  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-  background-color: #131313;
-  background-size: 20px 20px;
+	margin: 0;
+	padding: 0;
+	color: #6b6b6b;
+	background: linear-gradient(#f6ffd1, #e1ffcb) fixed;
+}
+
+* {
+	box-sizing: border-box;
+
+	&::before, &::after {
+		box-sizing: border-box;
+	}
+}
+
+.font-primary {
+	font-family: 'Merriweather Sans', sans-serif;
+}
+
+.font-secondary {
+	font-family: 'Petrona', serif;
+}
+
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('./assets/fonts/icomoon.woff?3yvz2y') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icomoon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-bullhorn:before {
+	content: "\e91a";
+}
+
+.icon-terminal:before {
+	content: "\ea81";
+}
+
+.icon-mail4:before {
+	content: "\ea86";
+}
+
+.icon-instagram:before {
+	content: "\ea92";
+}
+
+.icon-steam2:before {
+	content: "\eaad";
+}
+
+.icon-github:before {
+	content: "\eab0";
+}
+
+.icon-soundcloud:before {
+	content: "\eac3";
+}
+
+.icon-reddit:before {
+	content: "\eac6";
+}
+
+.icon-linkedin:before {
+	content: "\eac9";
+}
+
+.icon-stackoverflow:before {
+	content: "\ead0";
+}
+
+.text-white {
+	color: #fcffd1;
+}
+
+a {
+	color: #940094;
+	-webkit-text-decoration-color: #6B6B6B;
+	text-decoration-color: #6B6B6B;
+	background: linear-gradient(130deg, #940094 30%, #15009E);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-size: 200% 100%;
+	background-position: 100%;
+	transition: background-position 275ms ease;
+	text-decoration: none; // text decorations are clipped in WebKit browsers
+	cursor: pointer;
+	&:hover {
+		background-position: 0 100%;
+	}
+}
+
+strong {
+	font-weight: 900;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+}
+
+iframe {
+	@media screen and (max-width: 768px){
+		width: 100%;
+	}
 }

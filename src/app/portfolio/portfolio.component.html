@@ -1,0 +1,186 @@
+<app-header [titleColor]="titleColor" [pageTitleColor]="pageTitleColor" [subtitleColor]="subtitleColor">
+	<ng-container title>PortfolioPortfolioPortfolio</ng-container>
+	<ng-container page-title>My Portfolio</ng-container>
+	<ng-container subtitle>Learning By Doing</ng-container>
+</app-header>
+
+<app-portfolio-block [isLeft]="true">
+	<ng-container portfolio-image>
+		<i class="bg-purple rounded-full block circle-large bg-cover mx-auto"
+		   style="background-image:url('./assets/images/portfolio/portfolio-1.png');"></i>
+	</ng-container>
+	<ng-container portfolio-title>Angular 8/9/10 single page applications. JAMStack sites integrated with
+		microservices
+	</ng-container>
+	<ng-container portfolio-description>Responsible for the performant implementation of Angular apps to service over 1
+		million users using the latest and greatest front-end technology.
+	</ng-container>
+	<ng-container portfolio-learnings>
+		<li>SPA optimisation</li>
+		<li>Angular 9+ IVY engine benefits</li>
+		<li>Netlify JAMstack hosting</li>
+		<li>Angular content-projection (transclusion)</li>
+	</ng-container>
+</app-portfolio-block>
+
+<div (deferLoad)="showPortfolioItems = true">
+	<ng-container *ngIf="showPortfolioItems">
+		<app-portfolio-block [hasAwards]="true">
+			<ng-container portfolio-image>
+				<i class="bg-purple rounded-full block circle-large bg-cover mx-auto"
+				   style="background-image:url('./assets/images/portfolio/portfolio-2.png');"></i>
+			</ng-container>
+			<ng-container portfolio-award-image>
+				<div class="md:flex md:flex-row justify-between hidden">
+					<i class="bg-purple rounded-full circle-small block bg-cover bg-center"
+					   style="background-image:url('./assets/images/portfolio/portfolio-2-award-1.jpg');"></i>
+					<i class="bg-purple rounded-full circle-small block bg-cover bg-center"
+					   style="background-image:url('./assets/images/portfolio/portfolio-2-award-2.jpg');"></i>
+					<i class="bg-purple rounded-full circle-small block bg-cover bg-center"
+					   style="background-image:url('./assets/images/portfolio/portfolio-2-award-3.jpg');"></i>
+					<i class="bg-purple rounded-full circle-small block bg-cover bg-center"
+					   style="background-image:url('./assets/images/portfolio/portfolio-2-award-4.jpg');"></i>
+				</div>
+			</ng-container>
+			<ng-container portfolio-title>Hungry Lion big burger banner</ng-container>
+			<ng-container portfolio-description>South Africa's first HTML5 mobile activated banner advert. A campaign to
+				generate leads (location and mobile numbers) for our client. And thus the start of my web animation
+				love-story.
+				<a href="https://www.youtube.com/watch?v=0OwyCWtBzPg" target="_blank" rel="noopener"
+				   title="YouTube Video">Watch
+					the case study
+					video</a>
+			</ng-container>
+			<ng-container portfolio-learnings>
+				<li>Pure CSS3 animation</li>
+				<li>Performant web animations</li>
+				<li>Poly-filling CSS animation for cross-browser support</li>
+			</ng-container>
+			<ng-container portfolio-awards>
+				<li>Standard Bank <a
+					href="https://www.bizcommunity.com/Article/196/614/133024.html">MMA Smarties Award</a> (GOLD)
+				</li>
+				<li>The Assegai Awards (Integrated Direct Marketing Campaigns) (SILVER)</li>
+				<li>The Loerie Awards Company (Digital & Interactive - Internet Advertising)
+					(Finalist)
+				</li>
+				<li>IAB BOOKMARKS (Finalist)</li>
+
+			</ng-container>
+		</app-portfolio-block>
+
+		<app-portfolio-block [isLeft]="true" [hasAwards]="true">
+			<ng-container portfolio-image>
+				<i class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto relative overflow-hidden cursor-pointer">
+					<button *ngIf="isVisible" class="play-button rounded-full bg-purple absolute" aria-label="Play"
+							role="button" (click)="toggleVideo()">►
+					</button>
+					<video #videoPlayer width="100%" height="100%" class="absolute video-player object-cover" loop
+						   poster="./assets/images/portfolio/portfolio-3.jpg">
+						<source src="./assets/images/portfolio/portfolio-savanna-video.mp4" type="video/mp4">
+					</video>
+				</i>
+			</ng-container>
+			<ng-container portfolio-award-image><i
+				class="bg-purple rounded-full circle-small block bg-cover bg-center hidden md:block"
+				style="background-image:url('./assets/images/portfolio/portfolio-2-award-3.jpg');"></i>
+			</ng-container>
+			<ng-container portfolio-title>Savanna Cider HTML + GSAP.js animation library bottle reveal</ng-container>
+			<ng-container portfolio-description>Launching the new bottle with style and flair! A fully responsive
+				scrolling
+				animation experience that moved from CSS3 to GSAP.js to give it that performance punch.
+			</ng-container>
+			<ng-container portfolio-learnings>
+				<li>GSAP.js animation library</li>
+				<li>Physics and advanced web animations</li>
+				<li>Responsive animations</li>
+			</ng-container>
+			<ng-container portfolio-awards>
+				<li>2016 IAB SA Bookmark Awards (Finalist)</li>
+			</ng-container>
+		</app-portfolio-block>
+
+		<app-portfolio-block>
+			<ng-container portfolio-image>
+				<a href="https://www.icealion.com/" target="_blank" rel="noopener"><i
+					class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto"
+					style="background-image:url('./assets/images/portfolio/porfolio-4.png');"></i></a>
+			</ng-container>
+			<ng-container portfolio-title>ICEA LION</ng-container>
+			<ng-container portfolio-description>Fulfilling the clients request for a seemless experience between desktop
+				and
+				mobile to deal with Kenyan network speeds. This site was optimised to have a Google pagespeed result of
+				over 90
+				at the time. We built a site the could be themed with the clients category colors.
+			</ng-container>
+			<ng-container portfolio-learnings>
+				<li>SVG theming</li>
+				<li>CSS currentColor variables</li>
+				<li>LQIP (Low quality image placeholders)</li>
+			</ng-container>
+			<ng-container portfolio-awards>
+				<li>Standard Bank <a target="_blank" rel="noopener"
+									 href="https://www.bizcommunity.com/Article/196/614/133024.html">MMA Smarties
+					Award</a>
+					(GOLD)
+				</li>
+				<li>The Assegai Awards (Integrated Direct Marketing Campaigns) (SILVER)</li>
+				<li>The Loerie Awards Company (Digital & Interactive - Internet Advertising)
+					(Finalist)
+				</li>
+				<li>IAB BOOKMARKS (Finalist)</li>
+			</ng-container>
+		</app-portfolio-block>
+
+		<app-portfolio-block [isLeft]="true">
+			<ng-container portfolio-image>
+				<i class="bg-purple rounded-full block circle-large bg-cover bg-center mx-auto relative overflow-hidden cursor-pointer">
+					<button *ngIf="isVisibleB" class="play-button rounded-full bg-purple absolute" aria-label="Play"
+							role="button" (click)="toggleVideoB()">►
+					</button>
+					<video #videoPlayerB width="100%" height="100%" class="absolute video-player object-cover" loop
+						   poster="./assets/images/portfolio/portfolio-5.jpg">
+						<source src="./assets/images/portfolio/portfolio-three-ships.mp4" type="video/mp4">
+					</video>
+				</i>
+			</ng-container>
+			<ng-container portfolio-title>Three Ships Whiskey - Art Of Whiskey Making SVG animated experience
+			</ng-container>
+			<ng-container portfolio-description>A scroll-activated animated interaction of the whiskey crafting process.
+				Using the power of SVG line animations and CSS3 for a simple yet effective process illustration.
+			</ng-container>
+			<ng-container portfolio-learnings>
+				<li>SVG</li>
+				<li>SVG animation powered by CSS3</li>
+				<li>Scroll intersection javascript activated animations</li>
+			</ng-container>
+		</app-portfolio-block>
+	</ng-container>
+</div>
+
+
+<app-header [titleColor]="titleColor" [pageTitleColor]="pageTitleColor" [subtitleColor]="subtitleColor">
+	<ng-container title>ClientsClientsClientsClients</ng-container>
+	<ng-container subtitle>Clients</ng-container>
+</app-header>
+
+<div (deferLoad)="showImages = true" class="relative flex flex-wrap justify-center client-wrapper mb-4">
+	<ng-container *ngIf=showImages>
+		<div class="client" style="background-image: url('../../assets/logos/obikwa.jpg');"></div>
+		<div class="client-small" style="background-image: url('../../assets/logos/chevron.jpg');"></div>
+		<div class="client-large" style="background-image: url('../../assets/logos/woolworths.jpg');"></div>
+		<div class="client-small" style="background-image: url('../../assets/logos/hilton.jpg');"></div>
+		<div class="client" style="background-image: url('../../assets/logos/klipdrift.jpg');"></div>
+		<div class="client-small" style="background-image: url('../../assets/logos/distell.jpg');"></div>
+		<div class="client-small" style="background-image: url('../../assets/logos/Bains.jpg');"></div>
+		<div class="client-large" style="background-image: url('../../assets/logos/Marriott-logo.jpg');"></div>
+		<div class="client" style="background-image: url('../../assets/logos/hunters.jpg');"></div>
+		<div class="client-small" style="background-image: url('../../assets/logos/savanna.jpg');"></div>
+		<div class="client-small" style="background-image: url('../../assets/logos/capitec-bank.jpg');"></div>
+		<div class="client-large" style="background-image: url('../../assets/logos/mcdonalds.jpg');"></div>
+		<div class="client" style="background-image: url('../../assets/logos/masizane.jpg');"></div>
+		<div class="client" style="background-image: url('../../assets/logos/startnetwork.jpg');"></div>
+		<div class="client-small" style="background-image: url('../../assets/logos/city-of-cpt.jpg');"></div>
+		<div class="client-large" style="background-image: url('../../assets/logos/Old-Mutual.jpg');"></div>
+	</ng-container>
+</div>

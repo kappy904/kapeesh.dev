@@ -1,0 +1,30 @@
+<div class="logo fixed font-secondary flex items-center pt-6 pl-4 cursor-pointer z-10 outline-none" routerLink="/home">
+	<i class="bg-blue text-4xl overflow-hidden w-1/4 h-10 text-white font-extrabold rounded-full inline-block">K</i><span
+	class="text-blue text-2xl tracking-tight">apeesh</span>
+</div>
+<nav class="nav block absolute rounded-full cursor-pointer" (click)="showNav()" [ngClass]="{'active': isActive}">
+	<div class="line"></div>
+	<div class="line"></div>
+	<div class="line"></div>
+</nav>
+<div class="flex justify-around items-center flex overflow-hidden hidden-wrapper fixed"
+	 [ngClass]="{'full-screen block': isActive}">
+	<div id="circlesContainer" class="circles-container overflow-hidden" [ngClass]="{'active': isActive}"></div>
+	<div class="nav-items flex flex-col justify-center md:justify-start font-secondary">
+		<h5 class="font-secondary font-bold text-center mt-20 hidden md:block">Front End Developer</h5>
+		<h2 class="font-secondary font-bold text-6xl text-center mb-24 leading-10 hidden md:block">
+			<strong>Kapeesh</strong></h2>
+		<a routerLinkActive="nav-active" routerLink="/home" class="text-3xl text-center mb-4"
+		   (click)="showNav()">Home</a>
+		<a routerLinkActive="nav-active" routerLink="/cv" class="text-3xl text-center mb-4"
+		   (click)="showNav()">Download CV</a>
+		<a routerLinkActive="nav-active" routerLink="/portfolio" class="text-3xl text-center mb-4"
+		   (click)="showNav()">Portfolio</a>
+		<a routerLinkActive="nav-active" routerLink="/testimonials"
+		   class="text-3xl text-center mb-4" (click)="showNav()">Testimonials</a>
+		<a routerLinkActive="nav-active" routerLink="/about" class="text-3xl text-center mb-4"
+		   (click)="showNav()">About</a>
+		<a routerLinkActive="nav-active" routerLink="/contact" class="text-3xl text-center mb-4"
+		   (click)="showNav()">Contact</a>
+	</div>
+</div>

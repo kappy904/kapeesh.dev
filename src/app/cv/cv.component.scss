@@ -1,0 +1,67 @@
+.download-block {
+	width: 100%;
+	overflow: hidden;
+	height: 400px;
+	text-indent: -13px;
+
+	@media screen and (max-width: 640px) {
+		height: 270px;
+	}
+
+
+	p {
+		transform: rotate(45deg);
+		@media screen and (max-width: 768px) {
+			transform: scale(1.2) rotate(45deg);
+			opacity: .2;
+		}
+	}
+
+	a {
+		right: 20px;
+		text-indent: 0;
+		z-index: 6;
+		font-size: 9em;
+		top: 54%;
+		@media screen and (max-width: 768px) {
+			right: 0;
+			text-indent: 0;
+			z-index: 7;
+			font-size: 3em;
+			top: 100px;
+			left: 20px;
+			margin: auto;
+		}
+	}
+}
+
+.cd-disc {
+	div::after {
+		content: "";
+		background: linear-gradient(#5a1f9f, #01935e);
+		left: 55px;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		border-radius: 50%;
+		z-index: -1;
+	}
+
+	div::before {
+		content: "";
+		background: linear-gradient(#5a1f9f, #01935e);
+		left: -25px;
+		top: -25px;
+		width: 20%;
+		height: 20%;
+		position: absolute;
+		border-radius: 50%;
+		z-index: -1;
+
+		@media screen and (max-width: 640px) {
+			left: -15px;
+			top: -15px;
+		}
+	}
+}

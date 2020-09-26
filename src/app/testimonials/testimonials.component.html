@@ -1,0 +1,160 @@
+<app-header [titleColor]="titleColor" [subtitleColor]="subtitleColor">
+	<ng-container title>TestimonialsMentorshipTestimonialsMentorship</ng-container>
+	<ng-container page-title>Testimonials</ng-container>
+	<ng-container subtitle>Learning Together</ng-container>
+</app-header>
+
+<div class="container mx-auto px-4 py-4 md:py-10">
+	<app-testimonial-right>
+		<ng-container testimonial-name><a
+			href="https://www.linkedin.com/in/jeandp/" target="_blank" rel="noopener">Jean Du Plessis</a></ng-container>
+		<ng-container testimonial-title>Engineering Manager @ Gitlab</ng-container>
+		<ng-container testimonial-blurb>Kappy is one of those rare developers who's not only exceptional at his craft, but a natural leader, and excellent teacher as well.
+
+			I had the privilege of seeing him grow from an intern to leading our frontend team. During this period, he showed dedication to his craft, a thirst for knowledge, and most importantly stayed humble all the while sharing his knowledge with his peers.
+
+			Kappy is a multiplier to any team he joins. Not only does he improve the quality through his delivery, but he inspires those around him to raise their level too.
+		</ng-container>
+		<ng-container testimonial-image>
+			<source type="image/avif" srcset="./assets/images/testimonials/testimonials-jean.avif">
+			<img class="rounded-full" alt="Jean Du Plessis" src="./assets/images/testimonials/testimonials-jean.jpg">
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" href="https://www.linkedin.com/in/jeandp/" target="_blank" rel="noopener">Check out Jean's LinkedIn</a>
+		</ng-container>
+	</app-testimonial-right>
+	<app-testimonial-left>
+		<ng-container testimonial-image>
+			<source type="image/avif" srcset="./assets/images/testimonials/testimonials-lz.avif">
+			<img class="rounded-full" alt="Elzaane Wentzel" src="./assets/images/testimonials/testimonials-lz.jpg">
+		</ng-container>
+		<ng-container testimonial-name><a href="https://www.linkedin.com/in/l-zanne-wentzel/" target="_blank" rel="noopener"
+		>Elzaane Wentzel</a></ng-container>
+		<ng-container testimonial-title>Product Owner @ Lobster Ink</ng-container>
+		<ng-container testimonial-blurb>Kapeesh is rare find. A developer that is creative, communicates well,
+			relentlessly shares knowledge, inspires and motivates everyone around him, say what !!
+			Kapeesh joined my team as an intern and didnt waste time climbing the development ladder. I watched him grow
+			into a master of front-end development, a leader and a mentor. He nurtured other interns and guided them on
+			their development paths, all while still delivering award winning work and keeping that famous smile on his
+			face.
+			I’ve been lucky to have had Kapeesh in my team on 3 different occasions, and with his happy disposition he
+			was always ready to apply his talent in any situation. You cannot ask for a better team member, and I'm
+			looking forward to seeing his career unfold.
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" target="_blank" rel="noopener" href="https://www.linkedin.com/in/l-zanne-wentzel/">Check out LZ's LinkedIn</a>
+
+		</ng-container>
+	</app-testimonial-left>
+	<app-testimonial-right>
+		<ng-container testimonial-name><a
+			href="https://www.linkedin.com/in/coenraad-fick/" target="_blank" rel="noopener">Coenraad Fick</a></ng-container>
+		<ng-container testimonial-title>CTO @ Firelava.io</ng-container>
+		<ng-container testimonial-blurb>Having worked with and managed Kapeesh, there are a couple of words that comes
+			to mind as soon as I think about him. Competent, passionate, hard-working, all packaged into a body filled
+			with great humour and people skills. Kappy is always learning, never shying away from asking questions, but
+			he is also always willing to share what he has learned. Kappy generally inspires those around him, but his
+			bubbling personality, and through the years, I can call him friend before anything else.
+		</ng-container>
+		<ng-container testimonial-image>
+			<source type="image/avif" srcset="./assets/images/testimonials/testimonials-coenie.avif">
+			<img class="rounded-full" alt="Coenraad Fick" src="./assets/images/testimonials/testimonials-coenie.jpg">
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" target="_blank" rel="noopener" href="https://www.linkedin.com/in/coenraad-fick/">Check out Coenie's LinkedIn</a>
+
+		</ng-container>
+	</app-testimonial-right>
+	<app-testimonial-left>
+		<ng-container testimonial-image>
+			<source type="image/avif" srcset="./assets/images/testimonials/testimonials-stan.avif">
+			<img class="rounded-full" alt="Stanislav Pogrebnyak"
+				 src="./assets/images/testimonials/testimonials-stan.jpg">
+		</ng-container>
+		<ng-container testimonial-name><a href="https://www.linkedin.com/in/stanislavpogrebnyak/" target="_blank" rel="noopener"
+		>Stanislav Pogrebnyak
+			(Current)</a></ng-container>
+		<ng-container testimonial-title>Engineering Manager @ Lobster Ink</ng-container>
+		<ng-container testimonial-blurb>There is a rare type of person that makes every
+			interaction with a joy. They are professionals in their craft, they are humble and modest, creative with
+			an endless supply of inspiration. Extremely open to ideas, and not just accepts those but always adds up
+			to make it better and more sustainable. Kappy is definitely one of these people. I enjoy every time I
+			interact with him. He is also demanding to himself and people around, forcing them to be better. Great
+			speaker, great colleague, a craftsman with amazing potential.
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"href="https://www.linkedin.com/in/stanislavpogrebnyak/">Check out Stan's LinkedIn</a>
+
+		</ng-container>
+
+	</app-testimonial-left>
+</div>
+
+<app-header [titleColor]="titleColor" [subtitleColor]="subtitleColor">
+	<ng-container title>MenteesMenteesMenteesMenteesMentees</ng-container>
+	<ng-container subtitle>Mentees</ng-container>
+</app-header>
+
+<div (deferLoad)="showMentees = true" class="container mx-auto px-4 h-screen py-10">
+	<ng-container *ngIf="showMentees">
+		<app-testimonial-left>
+			<ng-container testimonial-image>
+				<source type="image/avif" srcset="./assets/images/testimonials/testimonials-sagwadi.avif">
+				<img class="rounded-full" alt="Sagwadi Maluleke"
+					 src="./assets/images/testimonials/testimonials-sagwadi.jpg">
+			</ng-container>
+			<ng-container testimonial-name><a href="https://www.linkedin.com/in/masagwadi/" target="_blank" rel="noopener">Sagwadi Maluleke</a>
+			</ng-container>
+			<ng-container testimonial-title>Fullstack Developer @ Red and Yellow Creative School of business
+			</ng-container>
+			<ng-container testimonial-blurb>My mentorship experience with Kapeesh beyond
+				empowering. The mentorship was very structured and practical, Kapeesh shared resources as well as
+				exercises which helped me learn more skills and test myself, we had a regular meeting to review and give
+				feedback.
+
+				This has played a critical role in my career development, the skills and knowledge became very helpful
+				in my current position as a developer. Kapeesh is one of the best developer, and he is very eager to
+				share his knowledge, tricks, and resources. I am grateful for his role in shaping the developer I am
+				today.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8" href="https://www.linkedin.com/in/masagwadi/" target="_blank" rel="noopener">Check out Sagwadi's LinkedIn</a>
+
+			</ng-container>
+		</app-testimonial-left>
+
+		<app-testimonial-right>
+
+			<ng-container testimonial-name><a
+				href="https://www.linkedin.com/in/mandisa-d-3233889b/" target="_blank" rel="noopener">Mandisa
+				Dlubom</a></ng-container>
+			<ng-container testimonial-title>Front-end developer @ Responsive Digital</ng-container>
+			<ng-container testimonial-blurb>I was fortunate to be mentored towards being a front-end developer by
+				Kapeesh
+				Manilal from January 2018 until early 2019. Before the mentorship, I was
+				fresh out of a Web Development 6 months course and I felt like I didn't know what I was doing.
+
+				Kappy was introduced as my mentor, what amazed me was that he created a curriculum which also had
+				timelines
+				and I had mini-projects that I had to deliver within the due date and present it. My curriculum was a
+				year
+				plan, with Kappy as my mentor, I was production-ready within 6 months and I started working on client
+				work.
+
+				I am grateful that Kappy took me under his wing and ensured that he passed his knowledge and set my
+				career
+				up for a win. I used to call him the best mentor ever and I still believe he is one.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8" href="https://www.linkedin.com/in/mandisa-d-3233889b/" target="_blank" rel="noopener">Check out Mandie's LinkedIn</a>
+
+			</ng-container>
+			<ng-container testimonial-image>
+				<source type="image/avif" srcset="./assets/images/testimonials/testimonials-mandisa-v2.avif">
+				<img class="rounded-full" alt="Mandisa Dlubom"
+					 src="./assets/images/testimonials/testimonials-mandisa-v2.jpeg">
+			</ng-container>
+		</app-testimonial-right>
+	</ng-container>
+</div>
+
