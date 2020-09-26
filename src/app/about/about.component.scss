@@ -103,6 +103,18 @@
 	image-rendering: auto !important;
 }
 
+.content-wrapper {
+	@media screen and (min-width: 768px) {
+		max-width: 50%;
+	}
+	@media screen and (min-width: 1024px) {
+		max-width: 60%;
+	}
+	@media screen and (min-width: 1280px) {
+		max-width: 70%;
+	}
+}
+
 .rounded-full {
 	border-radius: 50%;
 }
