@@ -28,6 +28,10 @@
 		background: #15009E;
 		height: 3px;
 		transform-origin: center center;
+		opacity: 0;
+		animation: fade-slow 1000ms 1s;
+		animation-fill-mode: forwards;
+		animation-delay: 1s;
 		@media screen and (max-width: 1023px) {
 			opacity: 0;
 		}
@@ -132,7 +136,6 @@
 
 		&::after {
 			content: "";
-			display: block;
 			position: absolute;
 			background: #15009E;
 			height: 3px;
@@ -142,13 +145,11 @@
 			left: auto;
 			top: auto;
 			@media screen and (min-width: 1024px) {
-				opacity: 1;
 				width: 60px;
 				right: 17px;
 				bottom: 33px;
 			}
 			@media screen and (min-width: 1280px) {
-				opacity: 1;
 				width: 105px;
 				right: -38px;
 				bottom: 33px;
@@ -240,14 +241,12 @@
 			transform: rotate(-45deg);
 
 			@media screen and (min-width: 1024px) {
-				opacity: 1;
 				width: 90px;
 				left: auto;
 				right: -39px;
 				top: 0;
 			}
 			@media screen and (min-width: 1280px) {
-				opacity: 1;
 				width: 93px;
 				left: auto;
 				right: -28px;
@@ -286,14 +285,12 @@
 			left: auto;
 			top: auto;
 			@media screen and (min-width: 1024px) {
-				opacity: 1;
 				width: 70px;
 				right: -59px;
 				bottom: auto;
 				top: 110px;
 			}
 			@media screen and (min-width: 1280px) {
-				opacity: 1;
 				width: 174px;
 				right: -160px;
 				bottom: 33px;
@@ -353,6 +350,15 @@
 	}
 }
 
+@keyframes fade-slow {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 @keyframes fade-in-custom {
 	0% {
 		opacity: 0;
@@ -369,17 +375,17 @@
 	}
 }
 
-@media screen and (max-width: 1024px) {
-	.circle {
-		opacity: 0;
-		animation: fade-in-custom 1000ms ease forwards;
 
-		@for $x from 2 through 5 {
+.circle {
+	opacity: 0;
+	animation: fade-in-custom 1000ms ease forwards;
+
+	@for $x from 2 through 5 {
 		&:nth-child(#{$x}) {
 			animation-delay: 300ms * ($x - 1);
 		}
 	}
-	}
 }
+
 
 
