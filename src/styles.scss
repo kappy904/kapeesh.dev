@@ -8,7 +8,7 @@ body {
 	margin: 0;
 	padding: 0;
 	color: #6b6b6b;
-	background: linear-gradient(#f6ffd1, #e1ffcb) fixed;
+	background: linear-gradient(rgb(66 103 178 / 48%), #898f9c6e) fixed;
 }
 
 * {
@@ -93,14 +93,14 @@ body {
 }
 
 .text-white {
-	color: #fcffd1;
+	color: #fff;
 }
 
 a {
 	color: #940094;
 	-webkit-text-decoration-color: #6B6B6B;
 	text-decoration-color: #6B6B6B;
-	background: linear-gradient(130deg, #940094 30%, #15009E);
+	background: linear-gradient(130deg, #4267B2 30%, #898F9C);
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

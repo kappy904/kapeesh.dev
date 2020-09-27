@@ -15,9 +15,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				purple: '#5a1f9f',
-				green: '#008521',
-				blue: '#15009E',
+				purple: '#000000',
+				green: '#898F9C',
+				blue: '#4267B2',
 			},
 			fontFamily: {
 				display: ['Merriweather Sans', 'sans-serif'],

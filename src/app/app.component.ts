@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
 				counter++
 			}
 
-			p.fill('#0a91651c')
+			p.fill('#4267b259')
 			p.noStroke()
 			for (let i = 0; i < circles.length; i++) {
 				p.ellipse(circles[i].x, circles[i].y,
