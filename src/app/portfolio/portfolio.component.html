@@ -6,7 +6,7 @@
 
 <app-portfolio-block [isLeft]="true">
 	<ng-container portfolio-image>
-		<i class="bg-purple rounded-full block circle-large bg-cover mx-auto"
+		<i class="bg-purple rounded-full block circle-large bg-cover mx-auto mb-4 md:mb-2"
 		   style="background-image:url('./assets/images/portfolio/portfolio-1.png');"></i>
 	</ng-container>
 	<ng-container portfolio-title>Angular 8/9/10 single page applications. JAMStack sites integrated with
@@ -27,7 +27,7 @@
 	<ng-container *ngIf="showPortfolioItems">
 		<app-portfolio-block [hasAwards]="true">
 			<ng-container portfolio-image>
-				<i class="bg-purple rounded-full block circle-large bg-cover mx-auto"
+				<i class="bg-purple rounded-full block circle-large bg-cover mx-auto mb-4 md:mb-2"
 				   style="background-image:url('./assets/images/portfolio/portfolio-2.png');"></i>
 			</ng-container>
 			<ng-container portfolio-award-image>
@@ -46,7 +46,7 @@
 			<ng-container portfolio-description>South Africa's first HTML5 mobile activated banner advert. A campaign to
 				generate leads (location and mobile numbers) for our client. And thus the start of my web animation
 				love-story.
-				<a href="https://www.youtube.com/watch?v=0OwyCWtBzPg" target="_blank" rel="noopener"
+				<a class="inline-block" href="https://www.youtube.com/watch?v=0OwyCWtBzPg" target="_blank" rel="noopener"
 				   title="YouTube Video">Watch
 					the case study
 					video</a>
