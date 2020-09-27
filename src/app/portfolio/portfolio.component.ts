@@ -7,9 +7,9 @@ import { Meta, Title } from '@angular/platform-browser'
 	styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit{
+	pageTitleColor = '#898F9C'
+	subtitleColor = '#4267B2'
 	titleColor = 'rgb(125 116 190 / 11%)'
-	subtitleColor = '#5a1f9f'
-	pageTitleColor: 'rgb(21, 0, 158)'
 	isVisible: boolean = true
 	isVisibleB: boolean = true
 	@ViewChild('videoPlayer') videoplayer: ElementRef

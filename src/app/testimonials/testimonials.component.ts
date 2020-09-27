@@ -7,8 +7,9 @@ import { Meta, Title } from '@angular/platform-browser'
 	styleUrls: ['./testimonials.component.scss']
 })
 export class TestimonialsComponent implements OnInit{
-	titleColor = 'rgba(11, 149, 96, 0.11)'
-	subtitleColor = '#5a1f9f'
+	titleColor = 'rgb(125 116 190 / 11%)'
+	pageTitleColor = '#898F9C'
+	subtitleColor = '#4267B2'
 	showMentees: boolean = false;
 
 	constructor(private _title: Title, private _meta: Meta) {

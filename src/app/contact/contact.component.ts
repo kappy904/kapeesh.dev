@@ -8,7 +8,8 @@ import { Meta, Title } from '@angular/platform-browser'
 })
 export class ContactComponent implements OnInit {
     titleColor = 'rgb(125 116 190 / 11%)'
-    subtitleColor = '#5a1f9f'
+	pageTitleColor = '#898F9C'
+	subtitleColor = '#4267B2'
 
 
     constructor(private _title: Title, private _meta: Meta) {

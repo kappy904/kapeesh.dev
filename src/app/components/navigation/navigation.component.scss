@@ -28,7 +28,7 @@
 .nav {
 	width: 70px;
 	height: 70px;
-	background: #15009E;
+	background: #4267B2;
 	z-index: 9;
 	right: 30px;
 	top: 30px;
@@ -88,19 +88,19 @@
 	position: relative;
 	z-index: 2;
 	opacity: 0;
-	color: #FCFFD1;
+	color: #FFFFFF;
 	animation: fade-in 1s ease-out;
 	animation-fill-mode: forwards;
 	@media screen and (max-width: 768px) {
-		background: linear-gradient(#15009E, #940094);
+		background: linear-gradient(#4267B2, #898F9C);
 	}
 
 	a {
-		color: #FCFFD1 !important;
+		color: #FFFFFF !important;
 		background: none;
 		transition: opacity 200ms linear;
 		-webkit-background-clip: initial;
-		-webkit-text-fill-color: #FCFFD1;
+		-webkit-text-fill-color: #FFFFFF;
 		background-size: auto;
 		background-position: 100%;
 
@@ -139,7 +139,7 @@
 	width: 100%;
 	height: 100%;
 	display: none;
-	background-color: #15009e;
+	background-color: #4267B2;
 	filter: blur(10px);
 
 	&.active {

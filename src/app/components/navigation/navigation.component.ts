@@ -76,7 +76,7 @@ export class NavigationComponent implements OnInit {
 				counter++
 			}
 
-			p.fill('#471af3')
+			p.fill('#cccccc78')
 			p.noStroke()
 			for (let i = 0; i < circles.length; i++) {
 				p.ellipse(circles[i].x + p.random(-1, 1), circles[i].y + p.random(-1, 1),

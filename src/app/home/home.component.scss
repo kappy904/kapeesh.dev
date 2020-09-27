@@ -1,5 +1,5 @@
 .circle {
-	border: 3px solid #15009E;
+	border: 3px solid #4267B2;
 	margin: 0;
 	padding: 0;
 	outline: 0;
@@ -63,13 +63,13 @@
 			transition: transform .2s linear;
 
 			path {
-				fill: #FCFFD1;
+				fill: #FFFFFF;
 			}
 		}
 
 		h2 {
 			transition: .2s linear all;
-			color: #FCFFD1;
+			color: #FFFFFF;
 		}
 
 		h5 {
@@ -388,4 +388,22 @@
 }
 
 
+.lighthouse {
+	img:first-child {
+		max-width: 50px;
+		max-height: 50px;
+	}
 
+	border-radius: 10px;
+	padding: 1em 1em;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+}
