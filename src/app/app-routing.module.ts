@@ -9,7 +9,7 @@ const routes: Routes = [
 	{ path: 'portfolio', loadChildren: () => import('./portfolio/portfolio.module').then(m => m.PortfolioModule) },
 	{ path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
 	{ path: 'cv', loadChildren: () => import('./cv/cv.module').then(m => m.CvModule) },
-	{ path: '**', redirectTo: 'home', pathMatch: 'full' }
+	{ path: '', redirectTo: 'home', pathMatch: 'full' }
 ]
 
 @NgModule({
