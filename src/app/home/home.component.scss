@@ -4,7 +4,7 @@
 	padding: 0;
 	outline: 0;
 	flex: none;
-	opacity:0;
+	opacity: 0;
 
 	svg {
 		transform-origin: center center;
@@ -92,7 +92,9 @@
 		height: 431px;
 		transition: .2s linear all;
 		top: 80px;
-
+		animation: fadein 1s;
+		animation-delay: 200ms;
+		animation-fill-mode: forwards;
 		@media screen and (max-width: 1023px) {
 			width: 321px;
 			height: 321px;
@@ -163,6 +165,9 @@
 		height: 320px;
 		top: 60px;
 		left: -120px;
+		animation: fadein 1s;
+		animation-delay: 400ms;
+		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
 			width: 221px;
 			height: 221px;
@@ -211,7 +216,9 @@
 		height: 250px;
 		top: 48px;
 		left: -70px;
-
+		animation: fadein 1s;
+		animation-delay: 600ms;
+		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
 			width: 221px;
 			height: 221px;
@@ -261,7 +268,9 @@
 		height: 360px;
 		top: 20px;
 		left: 80px;
-
+		animation: fadein 1s;
+		animation-delay: 800ms;
+		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
 			width: 221px;
 			height: 221px;
@@ -304,7 +313,9 @@
 		height: 260px;
 		top: -46px;
 		right: -73px;
-
+		animation: fadein 1s;
+		animation-delay: 1000ms;
+		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
 			width: 221px;
 			height: 221px;
@@ -360,33 +371,14 @@
 	}
 }
 
-@keyframes fade-in-custom {
-	0% {
-		opacity: 0;
-		transform: scale(.5);
-	}
-	50% {
-		opacity: 1;
-		transform: scale(1.1);
-	}
 
-	100% {
-		opacity: 1;
-		transform: scale(1);
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
 	}
 }
-
-
-.circle {
-	opacity: 0;
-	animation: fade-in-custom 1000ms ease forwards 300ms;
-
-	@for $x from 1 through 5 {
-		&:nth-child(#{$x}) {
-			animation-delay: 300ms * ($x - 1);
-		}
-	}
-}
-
 
 
