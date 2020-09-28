@@ -4,6 +4,7 @@
 	padding: 0;
 	outline: 0;
 	flex: none;
+	opacity:0;
 
 	svg {
 		transform-origin: center center;
@@ -378,9 +379,9 @@
 
 .circle {
 	opacity: 0;
-	animation: fade-in-custom 1000ms ease forwards;
+	animation: fade-in-custom 1000ms ease forwards 300ms;
 
-	@for $x from 2 through 5 {
+	@for $x from 1 through 5 {
 		&:nth-child(#{$x}) {
 			animation-delay: 300ms * ($x - 1);
 		}
