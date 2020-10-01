@@ -89,7 +89,7 @@
 	z-index: 2;
 	opacity: 0;
 	color: #FCFFD1;
-	animation: fade-in 1s ease-out;
+	animation: fade-in 250ms ease-out;
 	animation-fill-mode: forwards;
 	@media screen and (max-width: 768px) {
 		background: linear-gradient(#15009E, #940094);
@@ -144,7 +144,7 @@
 
 	&.active {
 		opacity: 0;
-		animation: fade-in 1s linear;
+		animation: fade-in 250ms linear;
 		animation-fill-mode: forwards;
 		display: block;
 	}

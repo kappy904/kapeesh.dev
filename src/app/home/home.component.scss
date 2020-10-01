@@ -74,7 +74,7 @@
 		height: 431px;
 		transition: .2s linear all;
 		top: 80px;
-		animation: fadein 1s;
+		animation: fade-in-custom 1s;
 		animation-delay: 200ms;
 		animation-fill-mode: forwards;
 		@media screen and (max-width: 1023px) {
@@ -147,7 +147,7 @@
 		height: 320px;
 		top: 60px;
 		left: -120px;
-		animation: fadein 1s;
+		animation: fade-in-custom 1s;
 		animation-delay: 400ms;
 		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
@@ -190,7 +190,7 @@
 		height: 250px;
 		top: 48px;
 		left: -70px;
-		animation: fadein 1s;
+		animation: fade-in-custom 1s;
 		animation-delay: 600ms;
 		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
@@ -233,7 +233,7 @@
 		height: 360px;
 		top: 20px;
 		left: 80px;
-		animation: fadein 1s;
+		animation: fade-in-custom 1s;
 		animation-delay: 800ms;
 		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
@@ -270,7 +270,7 @@
 		height: 260px;
 		top: -46px;
 		right: -73px;
-		animation: fadein 1s;
+		animation: fade-in-custom 1s;
 		animation-delay: 1000ms;
 		animation-fill-mode: forwards;
 		@media screen and (max-width: 768px) {
@@ -320,13 +320,17 @@
 	}
 }
 
-@keyframes fadein {
-	from {
-		opacity:0;
+@keyframes fade-in-custom {
+	0% {
+		transform: scale(.5);
 	}
-	to {
-		opacity:1;
+	50% {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
 	}
 }
-
-
