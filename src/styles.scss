@@ -9,6 +9,10 @@ body {
 	padding: 0;
 	color: #6b6b6b;
 	background: url("./assets/images/home/bg-new.png"),linear-gradient(#f6ffd1, #e1ffcb) fixed;
+
+	@media screen and (max-width: 1024px) {
+		background-size: contain;
+	}
 }
 
 * {
