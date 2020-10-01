@@ -11,18 +11,6 @@
 		transition: transform .2s linear;
 	}
 
-	&::before {
-		opacity: 0;
-		content: "";
-		position: absolute;
-		transform: scale(.9);
-		background-size: cover;
-		pointer-events: none;
-		@media screen and (max-width: 1023px) {
-			display: none;
-		}
-	}
-
 	&::after {
 		content: "";
 		position: absolute;
@@ -76,12 +64,6 @@
 		h5 {
 			transition: .2s linear all;
 			color: #940094;
-		}
-
-		&::before {
-			opacity: 1;
-			transform: scale(1);
-			transition: ease-in 100ms;
 		}
 	}
 
@@ -178,14 +160,6 @@
 			}
 		}
 
-		&::before {
-			width: 390px;
-			height: 388px;
-			left: -42px;
-			top: -37px;
-			background-image: url('../../assets/images/home/home-circle-b.png');
-		}
-
 		&::after {
 			left: auto;
 			width: 139px;
@@ -236,15 +210,6 @@
 			}
 		}
 
-		&::before {
-			width: 310px;
-			height: 310px;
-			left: -42px;
-			top: -33px;
-			transform: scale(.9) rotate(-13deg);
-			background-image: url('../../assets/images/home/home-circle-c.png');
-		}
-
 		&::after {
 			transform: rotate(-45deg);
 
@@ -280,14 +245,6 @@
 			svg {
 				width: 120px;
 			}
-		}
-
-		&::before {
-			width: 430px;
-			height: 430px;
-			left: -42px;
-			top: -44px;
-			background-image: url('../../assets/images/home/home-circle-d.png');
 		}
 
 		&::after {
@@ -326,14 +283,6 @@
 				width: 120px;
 			}
 		}
-
-		&::before {
-			width: 300px;
-			height: 290px;
-			left: -19px;
-			top: -18px;
-			background-image: url('../../assets/images/home/home-circle-e.png');
-		}
 	}
 }
 
@@ -370,7 +319,6 @@
 		opacity: 1;
 	}
 }
-
 
 @keyframes fadein {
 	from {

@@ -36,20 +36,6 @@
 			animation: none;
 			opacity: 1;
 		}
-
-		&::after {
-			content: '';
-			width: 10px;
-			height: 10px;
-			background-color: currentColor;
-			position: absolute;
-			top: 10px;
-			border-radius: 50%;
-			right: -14px;
-			@media screen and (max-width: 640px) {
-				display: none;
-			}
-		}
 	}
 }
 
