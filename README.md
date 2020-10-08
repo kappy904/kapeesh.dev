@@ -5,7 +5,7 @@ This is my 2nd iteration of my portfolio site
 10
 
 ### scully
-beta
+beta then upgraded to v1
 
 ### tailwind
 1.7.3
@@ -19,7 +19,5 @@ tutorial [followed](https://medium.com/@jacobneterer/angular-and-tailwindcss-238
 
 ---
 
-To serve
-`lite-server /dist/static`
 
 
