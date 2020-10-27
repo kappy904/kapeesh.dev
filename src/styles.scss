@@ -132,3 +132,29 @@ iframe {
 		width: 100%;
 	}
 }
+
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+	background-color: #fcffd1;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #fcffd1;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #fcffd1;
+	background-image: -webkit-gradient(linear,
+		40% 0%,
+		75% 84%,
+		from(#940094),
+		to(#15009E),
+		color-stop(.6,#940094))
+}

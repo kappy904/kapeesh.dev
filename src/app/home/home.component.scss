@@ -49,7 +49,6 @@
 
 		svg {
 			transform: scale(1.1);
-			transition: transform .2s linear;
 
 			path {
 				fill: #FCFFD1;
@@ -57,12 +56,10 @@
 		}
 
 		h2 {
-			transition: .2s linear all;
 			color: #FCFFD1;
 		}
 
 		h5 {
-			transition: .2s linear all;
 			color: #940094;
 		}
 	}
