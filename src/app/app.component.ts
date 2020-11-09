@@ -1,12 +1,12 @@
 import {Component} from '@angular/core'
 import { RouterOutlet } from '@angular/router'
-import { fadeInAnimation } from './app.animations'
+import { fadeInAnimations } from './app.animations'
 
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	animations: [
-		fadeInAnimation
+		fadeInAnimations
 	]
 })
 export class AppComponent {
