@@ -4,27 +4,44 @@
 	<ng-container subtitle>Learning By Doing</ng-container>
 </app-header>
 
-<app-portfolio-block [isLeft]="true">
+<app-portfolio-block [isLeft]="false" [hasAwards]="false">
 	<ng-container portfolio-image>
 		<i class="bg-purple rounded-full block circle-large bg-cover mx-auto mb-4 md:mb-2"
-		   style="background-image:url('./assets/images/portfolio/portfolio-1.png');"></i>
+		   style="background-image:url('./assets/images/portfolio/portfolio-0.png');"></i>
 	</ng-container>
-	<ng-container portfolio-title>Angular 8/9/10 single page applications. JAMStack sites integrated with
-		microservices
-	</ng-container>
-	<ng-container portfolio-description>Responsible for the performant implementation of Angular apps to service over 1
-		million users using the latest and greatest front-end technology.
+	<ng-container portfolio-title>GSTAR RAW: Checkout system</ng-container>
+	<ng-container portfolio-description>Serving over 4 million customers across the world. This checkout system currently in production can be viewed <a href="https://www.g-star.com/">here</a>. You'll have to add something to your cart first ;)
 	</ng-container>
 	<ng-container portfolio-learnings>
-		<li>SPA optimisation</li>
-		<li>Angular 9+ IVY engine benefits</li>
-		<li>Netlify JAMstack hosting</li>
-		<li>Angular content-projection (transclusion)</li>
+		<li>React 18+</li>
+		<li>Upgrading from class to functional components + hooks</li>
+		<li>SAP Hybris</li>
+		<li>Redux at scale</li>
+		<li>Smart/Dumb pattern</li>
 	</ng-container>
 </app-portfolio-block>
 
 <div (deferLoad)="showPortfolioItems = true">
 	<ng-container *ngIf="showPortfolioItems">
+		<app-portfolio-block [isLeft]="true">
+			<ng-container portfolio-image>
+				<i class="bg-purple rounded-full block circle-large bg-cover mx-auto mb-4 md:mb-2"
+				   style="background-image:url('./assets/images/portfolio/portfolio-1.png');"></i>
+			</ng-container>
+			<ng-container portfolio-title>Angular 8/9/10 single page applications. JAMStack sites integrated with
+				microservices
+			</ng-container>
+			<ng-container portfolio-description>Responsible for the performant implementation of Angular apps to service over 1
+				million users using the latest and greatest front-end technology.
+			</ng-container>
+			<ng-container portfolio-learnings>
+				<li>SPA optimisation</li>
+				<li>Angular 9+ IVY engine benefits</li>
+				<li>Netlify JAMstack hosting</li>
+				<li>Angular content-projection (transclusion)</li>
+			</ng-container>
+		</app-portfolio-block>
+
 		<app-portfolio-block [hasAwards]="true">
 			<ng-container portfolio-image>
 				<i class="bg-purple rounded-full block circle-large bg-cover mx-auto mb-4 md:mb-2"
