@@ -1,6 +1,10 @@
 .animated-header {
 	max-height: 400px;
 
+	&::empty {
+		display: none;
+	}
+
 	h1 {
 		animation: blur 35s infinite alternate-reverse ease-in-out;
 		font-size: 17em;

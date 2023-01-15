@@ -27,7 +27,8 @@
 
 	<div class="mt-3 md:mt-0 pl-3 md:pl-0">
 		<div class="flex flex-col py-6 md:py-0">
-			<h2 class="font-bold font-primary text-blue text-xl tracking-widest"><a href="https://www.pluralsight.com/product/skill-iq" rel="noreferrer">Skill proficiency IQ</a></h2>
+			<h2 class="font-bold font-primary text-blue text-xl tracking-widest"><a
+				href="https://www.pluralsight.com/product/skill-iq" rel="noreferrer">Skill proficiency IQ</a></h2>
 			<p class="font-bold font-primary text-blue mb-4">Based on skill tests taken on Pluralsight</p>
 		</div>
 		<div class="flex flex-col md:flex-row">
@@ -88,7 +89,8 @@
 								  transform="translate(-766)" />
 						</svg>
 					</i>
-					<span class="font-bold font-primary text-blue text-xl tracking-widest">JS<br /> Proficient 143</span>
+					<span
+						class="font-bold font-primary text-blue text-xl tracking-widest">JS<br /> Proficient 143</span>
 				</div>
 				<div class="flex flex-row items-center mb-10">
 					<i class="bg-blue mr-6 text-3xl md:text-6xl ball rounded-full flex items-center justify-center">
@@ -110,3 +112,387 @@
 		</div>
 	</div>
 </div>
+
+
+<app-header [titleColor]="titleColor"
+			[subtitleColor]="subtitleColor">
+	<ng-container title>OnlineCurriculumVitaeOnlineCurriculumVitaeOnlineCurriculumVitaeOnlineCurriculumVitae</ng-container>
+	<ng-container page-title>Read online</ng-container>
+	<ng-container subtitle>Check out my CV right here if you'd like</ng-container>
+</app-header>
+
+<div class="relative overflow-hidden mt-20 mb-6 md:mb-10">
+	<div>
+		<h3 [ngStyle]="{'color': '#940094'}"
+			class="font-primary font-bold font-primary pl-3 md:pl-12 pointer-events-none select-none text-base mb-1 md:mb-0 md:text-2xl">
+			EDUCATION HISTORY
+		</h3>
+	</div>
+</div>
+<div class="container content-center m-auto">
+	<div class="px-3 flex mb-10 md:mb-10 items-center flex-col md:flex-row">
+		<div>
+			<h2 class="font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				University of Cape Town
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>Degree: Bachelor of Commerce specializing in Information Systems</li>
+				</ul>
+			</div>
+			<h2 class="mt-6 font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				Quirk Education
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>Course: Mobile Marketing</li>
+					<li>Course: User Experience and Design</li>
+					<li>Course: Digital Marketing</li>
+					<li>Course: Search Engine Optimisation/</li>
+				</ul>
+			</div>
+			<h2 class="mt-6 font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				Red and Yellow
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>Course: NCIT Management and Leadership Training</li>
+				</ul>
+			</div>
+			<h2 class="mt-6 font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				Marburg Secondary School
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>Exemption: English 1st Language HG - A, Afrikaans 2nd Language HG - A, Biology HG - A
+						Business Economics HG - A, Accounting, A Mathematics HG - B.
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="relative overflow-hidden mt-20 mb-6 md:mb-10">
+	<div>
+		<h3 [ngStyle]="{'color': '#940094'}"
+			class="font-primary font-bold font-primary pl-3 md:pl-12 pointer-events-none select-none text-base mb-1 md:mb-0 md:text-2xl">
+			EMPLOYMENT HISTORY/EXPERIENCE of 10 years
+		</h3>
+	</div>
+</div>
+
+<div class="px-3 container content-center m-auto">
+	<app-testimonial-left>
+		<ng-container testimonial-image>
+			<source type="image/webp" srcset="./assets/images/cv/cv-pp.webp">
+			<img class="rounded-full" alt="pp" src="./assets/images/cv/cv-pp.jpg">
+		</ng-container>
+		<ng-container testimonial-name>Frontend Consultant at Passionate People</ng-container>
+		<ng-container testimonial-title>April 2021 - current</ng-container>
+		<ng-container testimonial-blurb>Ever since I moved to Amsterdam and attended the biggest Angular conference in
+			EU I wanted to work for Passionate People, who hosted the conference. Starting a new job during a pandemic
+			was daunting but it turned out great. I challenged myself to try something new and started my React journey
+			at my client GSTAR raw, a high fashion clothing retailer. At first, I missed the opinionated approach of
+			Angular but after a couple of months, I started to see the value of React and even loved JSX. I realised
+			that with .js anything is possible and my opinion of frontend frameworks/libraries has changed completely. I
+			currently work on the checkout system which we upgraded from 16 to 18. It interfaces with SAP hybris and our
+			payment provider, Adyen. I also support the legacy project team which is vanilla js and tons of scss. The
+			mix of both legacy and bleeding edge has got me appreciating what we frontend developers have in our toolkit
+			these days!
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+			   href="https://lobsterink.com/">Check out LobsterInk</a>
+
+		</ng-container>
+	</app-testimonial-left>
+	<app-testimonial-left>
+		<ng-container testimonial-image>
+			<source type="image/webp" srcset="./assets/images/cv/cv-lobster.webp">
+			<img class="rounded-full" alt="lobster" src="./assets/images/cv/cv-lobster.jpg">
+		</ng-container>
+		<ng-container testimonial-name>Mid-level UI Developer at Lobster Ink</ng-container>
+		<ng-container testimonial-title>Jan 2019 - April 2021</ng-container>
+		<ng-container testimonial-blurb>My current Role as a UI developer is to enforce standards across the platform
+			and
+			create reusable, DRY
+			components. I have also started working on our angular upgrade plan from 6 to 7. I work closely with
+			design to ensure pixel perfection and negotiate cross-browser compatible solutions. As a frontend
+			developer, we interface with our backend with GraphQL/HTTP so both solutions are built into our app.
+			We are currently exploring ngxs for state management. Due to the large scale of our app (now used by
+			over a million users) we are pushing for DRY components that follow single/multi-shot transclusion
+			principles. I am part of the FrontEnd guild where we plan and upgrade the UI to the highest standard.
+			We are currently moving from angular layout to fx-layout to improve performance.
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+			   href="https://lobsterink.com/">Check out LobsterInk</a>
+
+		</ng-container>
+	</app-testimonial-left>
+
+	<app-testimonial-left>
+		<ng-container testimonial-image>
+			<source type="image/webp" srcset="./assets/images/cv/cv-responsive.webp">
+			<img class="rounded-full" alt="Responsive" src="./assets/images/cv/cv-responsive.jpg">
+		</ng-container>
+		<ng-container testimonial-name>Senior Web Developer/ Tech Lead at Responsive Digital</ng-container>
+		<ng-container testimonial-title>September- 2017 - December 2018</ng-container>
+		<ng-container testimonial-blurb>I was a technical lead on two major projects for a large corporate client, Old
+			Mutual. I ran a 1 year
+			internship where I devised a mentorship structure and oversaw the programme. I gave workshops to the
+			development team to share my learnings and teach core fundamental knowledge on CSS methodologies
+			and frontend tooling. I jumped into the world of Angular and started up-skilling on ES6.
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+			   href="https://responsive.co.za/">Check out Responsive</a>
+
+		</ng-container>
+	</app-testimonial-left>
+
+	<app-testimonial-left>
+		<ng-container testimonial-image>
+			<source type="image/webp" srcset="./assets/images/cv/cv-mirum.webp">
+			<img class="rounded-full" alt="Mirum" src="./assets/images/cv/cv-mirum.jpg">
+		</ng-container>
+		<ng-container testimonial-name>Line manager/ Front End Team Lead at Mirum</ng-container>
+		<ng-container testimonial-title>January 2017 - August 2017</ng-container>
+		<ng-container testimonial-blurb>I lead a team of 3 developers. This includes project planning meetings with
+			designers and
+			UX to ensure the team works together. I dealt with disciplinary action, leave requests, mentoring,
+			code-reviews and promotions. Furthermore, I worked with the Red and Yellow School to nurture
+			young learners from previously disadvantaged communities who are currently on the NCIT
+			learnership program. I managed 5 learners who completed various
+			assignments authored by me. I enforce Codepen and all projects are forked and reviewed.
+		</ng-container>
+		<ng-container testimonial-links>
+			<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+			   href="https://www.facebook.com/MirumAgency/?brand_redir=6639858751">Check out Mirum</a>
+		</ng-container>
+	</app-testimonial-left>
+</div>
+
+<div class="px-3 flex container content-center flex flex-col md:flex-row justify-evenly m-auto">
+	<div class="flex-1 w-100 md:w-64">
+		<app-testimonial-left>
+			<ng-container testimonial-image>
+				<source type="image/webp" srcset="./assets/images/cv/cv-quirk.webp">
+				<img class="rounded-full" alt="Quirk" src="./assets/images/cv/cv-quirk.jpg">
+			</ng-container>
+			<ng-container testimonial-name>Front-End Lead Engineer at Quirk</ng-container>
+			<ng-container testimonial-title>March 2016 – January 2017</ng-container>
+			<ng-container testimonial-blurb>My role was to research and implement new Front End technologies in the
+				team. I
+				rolled out a gulp
+				workflow boilerplate for static Web and Drupal projects. I conducted regular code reviews with the
+				team and taught BEM methodology for large projects. I also started team code and plugin
+				discussions in front of the whiteboard to encourage team debate and involvement.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+				   href="https://www.linkedin.com/company/quirkagency">Check out Quirk</a>
+			</ng-container>
+		</app-testimonial-left>
+	</div>
+	<div class="flex-1 w-100 md:w-64">
+		<app-testimonial-left>
+			<ng-container testimonial-image>
+				<source type="image/webp" srcset="./assets/images/cv/cv-quirk.webp">
+				<img class="rounded-full" alt="Quirk" src="./assets/images/cv/cv-quirk.jpg">
+			</ng-container>
+			<ng-container testimonial-name>Mid-Level Front-End Engineer at Quirk</ng-container>
+			<ng-container testimonial-title>May 2014 – February 2016</ng-container>
+			<ng-container testimonial-blurb>I was introduced to JavaScript which allowed me to learn the GSAP animation
+				library
+				and
+				specialized in all forms of animation, be it SVG, CSS or .JS. I completed various full website builds.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+				   href="https://www.linkedin.com/company/quirkagency">Check out Quirk</a>
+			</ng-container>
+		</app-testimonial-left>
+	</div>
+</div>
+
+<div class="px-3 flex container content-center flex flex-col md:flex-row justify-evenly m-auto">
+	<div class="flex-1 w-100 md:w-64">
+		<app-testimonial-left>
+			<ng-container testimonial-image>
+				<source type="image/webp" srcset="./assets/images/cv/cv-quirk.webp">
+				<img class="rounded-full" alt="Quirk" src="./assets/images/cv/cv-quirk.jpg">
+			</ng-container>
+			<ng-container testimonial-name>Jnr Front-End Engineer at Quirk</ng-container>
+			<ng-container testimonial-title>March 2013 - April 2014</ng-container>
+			<ng-container testimonial-blurb>I started with coding mailers to Facebook applications and was always
+				willing to learn from my
+				colleagues. My calling was Front End development.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+				   href="https://www.linkedin.com/company/quirkagency">Check out Quirk</a>
+			</ng-container>
+		</app-testimonial-left>
+	</div>
+	<div class="flex-1 w-100 md:w-64">
+		<app-testimonial-left>
+			<ng-container testimonial-image>
+				<source type="image/webp" srcset="./assets/images/cv/cv-quirk.webp">
+				<img class="rounded-full" alt="Quirk" src="./assets/images/cv/cv-quirk.jpg">
+			</ng-container>
+			<ng-container testimonial-name>Developer Apprentice at Quirk</ng-container>
+			<ng-container testimonial-title>October 2012 - February 2013</ng-container>
+			<ng-container testimonial-blurb>I joined the Quirk Create Graduate Program after completing my degree at UCT
+				and assisted with
+				development projects as well some design work.
+			</ng-container>
+			<ng-container testimonial-links>
+				<a class="font-bold font-primary pr-8" target="_blank" rel="noopener"
+				   href="https://www.linkedin.com/company/quirkagency">Check out Quirk</a>
+			</ng-container>
+		</app-testimonial-left>
+	</div>
+</div>
+
+<div class="relative overflow-hidden mb-6 md:mb-10">
+	<div>
+		<h3 [ngStyle]="{'color': '#940094'}"
+			class="text-uppercase font-primary font-bold font-primary pl-3 md:pl-12 pointer-events-none select-none text-base mb-1 md:mb-0 md:text-2xl">
+			Tech exposure
+		</h3>
+	</div>
+</div>
+
+<div class="px-3 m-auto container content-center">
+	<ul>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">HTML5, CSS3</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Jade/Pug, HAML</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">SASS, SCSS, LESS</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">React 16+, Angular 6+, jQuery</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">BEM, Atomic SCSS, Material, FxLayout</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">GSAP.js animation library</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Bootstrap, Foundation</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Drupal 7/8</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">MySQL, MariaDB</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">NPM, Gulp, Grunt, Webpack</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Azure DevOps, Pantheon, Circle CI</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JIRA, Resource Guru, Asana</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Bitbucket, Github</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Linux Arch, Ubuntu, OSX, Windows</span>
+		<span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Adobe creative cloud (PS, BR, LR)</span>
+	</ul>
+</div>
+
+<div class="relative overflow-hidden mt-20 mb-6 md:mb-10">
+	<div>
+		<h3 [ngStyle]="{'color': '#940094'}"
+			class="text-uppercase font-primary font-bold font-primary pl-3 md:pl-12 pointer-events-none select-none text-base mb-1 md:mb-0 md:text-2xl">
+			Honors & Awards during employment
+		</h3>
+	</div>
+</div>
+
+<div class="px-3 container content-center m-auto">
+	<div class="mb-10 md:mb-10 items-center flex-col md:flex-row">
+		<div>
+			<h2 class="font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				GOLD Award - Standard Bank MMA Smarties Award (Innovation)
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>Role: Front-end HTML5 and Css3 animations</li>
+					<li>Award Entry:
+						http://hellojudge.passionfordigital.biz/hungry-lion-bigger-burger-banner/
+					</li>
+					<li>Case Study: http://www.gottaquirk.com/2014/07/10/the-hungry-lion-bigger-burger-banner/</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="px-3 container content-center m-auto">
+	<div class="flex mb-10 md:mb-10 items-center flex-col md:flex-row">
+		<div>
+			<h2 class="font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				Finalist - The Loerie Awards Company (Digital & Interactive - Internet Advertising)
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>The Loerie Awards Company (September 2014)</li>
+					<li>Role: Front-end HTML5 and Css3 animations
+					</li>
+					<li>Award Entry <a href="http://hellojudge.passionfordigital.biz/hungry-lion-bigger-burger-banner/">here</a>
+					</li>
+					<li>Case Study <a href="http://www.gottaquirk.com/2014/07/10/the-hungry-lion-bigger-burger-banner/">here</a>
+					</li>
+					<li>Finalists <a href="http://finalists.loeries.com/finalists.aspx?link=awards_finalists">here</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="px-3 container content-center m-auto">
+	<div class="flex mb-10 md:mb-10 items-center flex-col md:flex-row">
+		<div>
+			<h2 class="font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				SILVER Award - The Assegai Awards (Integrated Direct Marketing Campaigns)
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>The Assegai Awards (November 2014)</li>
+					<li>Role: Front-end Engineering</li>
+					<li>The Hungry Lion Lucky Bucket/</li>
+					<li>The Hungry Lion Lucky Bucket</li>
+					<li>Results <a href="http://www.marklives.com/2014/11/assegai-awards-2014-winners/?category=media#.VFyXjvm
+						UdkI">page</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="px-3 container content-center m-auto">
+	<div class="flex mb-10 md:mb-10 items-center flex-col md:flex-row">
+		<div>
+			<h2 class="font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				Finalist - 2016 IAB SA Bookmark Awards
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>IAB SA Bookmark Awards (January 2016)</li>
+					<li>Savanna Premium Cider :: Global Website</li>
+					<li>Role: Part of the Front-End Development Team + Animations</li>
+					<li>GSAP JavaScript animations for Bottle <a href="http://savannacider.com/drylights/new-bottle">showcase</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="px-3 container content-center m-auto">
+	<div class="flex mb-10 md:mb-10 items-center flex-col md:flex-row">
+		<div>
+			<h2 class="font-secondary tracking-tighter leading-6 md:text-3xl text-2xl mb-2 font-extrabold">
+				Finalist - Hungry Lion – Lucky Bucket Integrated Campaign
+			</h2>
+			<div class="font-light font-primary text-base leading-6 tracking-wider">
+				<ul>
+					<li>IAB BOOKMARKS (January 2015)</li>
+					<li>Role: Front-End engineer</li>
+					<li>Role: Part of the Front-End Development Team + Animations</li>
+					<li>Announcement <a href="http://iabsa.net/news/iab-bookmarks-awards-finalists-announced/">here</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
